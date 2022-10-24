@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report | Scam Alert</title>
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap icons cdn -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"
+        integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css styles link -->
+    <link rel="stylesheet" href="./css/utilities.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-center">
+                <!-- nav header -->
+                <div class="nav-header">
+                    <img src="./images/logo.png" class="logo" alt="scam alert logo" />
+                    <button class="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <!-- links -->
+                <ul class="links ml-1">
+                    <li>
+                        <a href="index.html">home</a>
+                    </li>
+                    <li class="add-mt">
+                        <a href="projects.html">check identity</a>
+                    </li>
+                    <li class="add-mt">
+                        <a href="contact.html">real stories shared</a>
+                    </li>
+                    <li class="add-mt">
+                        <a href="contact.html">education</a>
+                    </li>
+                </ul>
+                <ul class="links flex">
+                    <li class="mr-3">
+                        <a href="#">
+                            <i class="fa-solid fa-user-pen"></i>
+                            <span>Sign in</span>
+                        </a>
+                    </li>
+                    <li class="btn make-text-white">
+                        <a href="#">
+                            Share your story
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN SITE SECTION -->
+    <main class="pt-4 reports-main pb-5">
+        <section class="pt-5 pb-5 shield-container">
+            <img src="./images/auth/vector.png" alt="shield" class="shield">
+            <h1>Share your story</h1>
+            <p>
+                Please share as much as you know. The details share would help the public to understand the strength of the scam and beware of it.
+            </p>
+            <div class="flex steps-container">
+                <div class="step step1 active">
+                    <span>1</span>
+                    <p>Basic questions</p>
+                </div>
+                <div class="step step2">
+                    <span>2</span>
+                    <p>Scam report</p>
+                </div>
+                <div class="step step3">
+                    <span>3</span>
+                    <p>Done</p>
+                </div>
+            </div>
+        </section>
+        <section class="container card">
+            <form action="">
+                <section class="first-form-section">
+                    <article>
+                        <div><strong>1</strong></div>
+                        <div>
+                            <h3>Please select the option that best describes how you are related to the story you are about to share</h3>
+                            <h5 class="mt-1">I am...</h5>
+                            <div class="list-options-container">
+                                <div>
+                                    <input type="radio" name="i_am" id="the_victim" />
+                                    <label for="the_victim">The Victim</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="i_am" id="reporting_for_victim" />
+                                    <label for="reporting_for_victim">Reporting for a victim</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="i_am" id="reporting_for_company" />
+                                    <label for="reporting_for_company">Reporting on behalf of a company</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="i_am" id="witness" />
+                                    <label for="witness">I am a witness</label>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div><strong>2</strong></div>
+                        <div>
+                            <h3>Do you wish to show your profile or share the story as anonymous?</h3>
+                            <div class="list-options-container">
+                                <div>
+                                    <input type="radio" name="anonymous" id="remain_anonymous" />
+                                    <label for="remain_anonymous">I wish to remain anonymous</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="anonymous" id="share_profile" />
+                                    <label for="share_profile">I don't mind sharing my profile</label>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div><strong>3</strong></div>
+                        <div>
+                            <h3>Who or what are you reporting?</h3>
+                            <div class="list-options-container">
+                                <div>
+                                    <input type="checkbox" name="reporting_person" id="person" />
+                                    <label for="person">A single person</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="reporting_company" id="company" />
+                                    <label for="company">A company/organisation</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="reporting_phone_number" id="phone_number" />
+                                    <label for="phone_number">A phone number</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="reporting_media_personel" id="media_personel" />
+                                    <label for="media_personel">Social media personel</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="reporting_website_forum" id="website_forum" />
+                                    <label for="website_forum">A website, forum, or online group</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="reporting_people" id="people" />
+                                    <label for="people">Group of people</label>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div><strong>4</strong></div>
+                        <div>
+                            <h3>Which Information do you have on scammer or the fake website?</h3>
+                            <div class="list-options-container">
+                                <div>
+                                    <input type="checkbox" name="i_have_full_name" id="i_have_full_name" />
+                                    <label for="i_have_full_name">Full name</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="i_have_phone_number" id="i_have_phone_number" />
+                                    <label for="i_have_phone_number">Phone number</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="i_have_bank_details" id="i_have_bank_details" />
+                                    <label for="i_have_bank_details">Bank account number & bank name</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="i_have_online_link" id="i_have_online_link" />
+                                    <label for="i_have_online_link">Website, forum, or online group link</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="i_have_other_names" id="i_have_other_names" />
+                                    <label for="i_have_other_names">Other names or nicknames</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="i_have_profession" id="i_have_profession" />
+                                    <label for="i_have_profession">Profession</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="i_have_picture" id="i_have_picture" />
+                                    <label for="i_have_picture">Profile picture/logo</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="i_have_media_link_username" id="i_have_media_link_username" />
+                                    <label for="i_have_media_link_username">Social media link or username</label>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <div class="container">
+                        <button type="button" class="btn px-2">
+                            Proceed
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </section>
+                <section class="second-form-section">
+                    <article>
+                        <div><strong>5</strong></div>
+                        <div>
+                            <h3>Provide those information you have on the scammer or fake website.</h3>
+                            <div class="list-options-container">
+                                <div>
+                                    <label for="person">Full name of scammer or website</label>
+                                    <input type="input" name="" id="" />
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div><strong>6</strong></div>
+                        <div>
+                            <h3>Provide those information you have on the scammer or fake website.</h3>
+                            <p>
+                                Please explain how the incident happened to make the public understand why they need to beware of the scammer, fake
+                                site, or phone number
+                            </p>
+                            <textarea name="" id="" placeholder="briefly explain here..."></textarea>
+                        </div>
+                    </article>
+                    <article>
+                        <div><strong>7</strong></div>
+                        <div>
+                            <h3>Upload evidence (if any)</h3>
+                            <p>
+                                If you have evidence, you can include the image or screenshot too
+                            </p>
+                            <div>
+                                ....
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div><strong>8</strong></div>
+                        <div>
+                            <h3>What loss do you suffer?</h3>
+                            <div class="list-options-container">
+                                <div>
+                                    <input type="checkbox" name="lost_bank_details" id="lost_bank_details" />
+                                    <label for="lost_bank_details">Banking details</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="lost_money" id="lost_money" />
+                                    <label for="lost_money">Money</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="lost_personal_info" id="lost_personal_info" />
+                                    <label for="lost_personal_info">Personal Information</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="lost_goods" id="lost_goods" />
+                                    <label for="lost_goods">Goods</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="lost_nothing" id="lost_nothing" />
+                                    <label for="lost_nothing">Nothing</label>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div><strong>9</strong></div>
+                        <div>
+                            <h3>What information do you want to pass to the public?</h3>
+                            <p>
+                                eg. Marykel instagram makeup seller is a scammer, beware of her.
+                            </p>
+                            <textarea name="" id="" placeholder=""></textarea>
+                        </div>
+                    </article>
+                    <article>
+                        <div><strong>10</strong></div>
+                        <div>
+                            <h3>Digital consent</h3>
+                            <div class="consent-container">
+                                <input type="checkbox" name="consent" id="consent">
+                                <label for="consent">
+                                    I affirm that the information I provided is true and accurate to the best of my knowledge. I understand that providing
+                                    false information could make me subject to fine, imprisonment, or both. (Title 18, Nigeria law. Code, Section 1001.).
+                                </label>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <div class="container">
+                    <button type="button" class="btn px-2">
+                        Submit
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <!-- END MAIN SITE SECTION -->
+
+    <footer>
+        <section class="container subscribe-container">
+            <img src="./images/home/empty mail box.png" alt="empty mail box">
+            <div>
+                <h5>Subscribe to receive stories & tips</h5>
+                <p>Stories share by the public plus tips & guide on scamming will be sent to you regularly.</p>
+            </div>
+            <form action="">
+                <input type="text" name="" id="" placeholder="Email address"/>
+                <button class="btn">Subscribe</button>
+            </form>
+        </section>
+        <section class="container grid main-footer-content">
+            <div>
+                <div class="scam-logo-container">
+                    <img src="./images/logo2.png" alt="scam alert logo" />
+                    <strong>Scam Alert</strong>
+                </div>
+                <p>
+                    Scam Alert is a non-profit organisation committed to promoting public awareness and concern about
+                    crime and to propagate the concept of self-help in crime prevention.
+                </p>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Our Vision</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Get help</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Legal Notice</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Us</a></li>
+                    <li><a href="#">DPA</a></li>
+                    <li><a href="#">DMCA Policy</a></li>
+                    <li><a href="#">ERDF Support</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Follow us</h4>
+                <div class="social-containers">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="container copyrights">
+            &copy; 
+            <span class="year">2022</span> 
+            scamalert.com. All rights reserved.
+        </section>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
