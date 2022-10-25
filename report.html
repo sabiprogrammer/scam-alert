@@ -68,12 +68,13 @@
     </header>
 
     <!-- MAIN SITE SECTION -->
-    <main class="pt-4 reports-main pb-5">
+    <main class="pt-4 reports-main new pb-5">
         <section class="pt-5 pb-5 shield-container">
             <img src="./images/auth/vector.png" alt="shield" class="shield">
             <h1>Share your story</h1>
             <p>
-                Please share as much as you know. The details share would help the public to understand the strength of the scam and beware of it.
+                Please share as much as you know. The details share would help the public to understand the strength of
+                the scam and beware of it.
             </p>
             <div class="flex steps-container">
                 <div class="step step1 active">
@@ -96,7 +97,8 @@
                     <article>
                         <div><strong>1</strong></div>
                         <div>
-                            <h3>Please select the option that best describes how you are related to the story you are about to share</h3>
+                            <h3>Please select the option that best describes how you are related to the story you are
+                                about to share</h3>
                             <h5 class="mt-1">I am...</h5>
                             <div class="list-options-container">
                                 <div>
@@ -140,27 +142,27 @@
                             <h3>Who or what are you reporting?</h3>
                             <div class="list-options-container">
                                 <div>
-                                    <input type="checkbox" name="reporting_person" id="person" />
+                                    <input type="checkbox" name="reporting_person" id="person" class="reporting-checkbox-input"/>
                                     <label for="person">A single person</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="reporting_company" id="company" />
+                                    <input type="checkbox" name="reporting_company" id="company" class="reporting-checkbox-input"/>
                                     <label for="company">A company/organisation</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="reporting_phone_number" id="phone_number" />
+                                    <input type="checkbox" name="reporting_phone_number" id="phone_number" class="reporting-checkbox-input"/>
                                     <label for="phone_number">A phone number</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="reporting_media_personel" id="media_personel" />
+                                    <input type="checkbox" name="reporting_media_personel" id="media_personel" class="reporting-checkbox-input"/>
                                     <label for="media_personel">Social media personel</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="reporting_website_forum" id="website_forum" />
+                                    <input type="checkbox" name="reporting_website_forum" id="website_forum" class="reporting-checkbox-input"/>
                                     <label for="website_forum">A website, forum, or online group</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="reporting_people" id="people" />
+                                    <input type="checkbox" name="reporting_people" id="people" class="reporting-checkbox-input"/>
                                     <label for="people">Group of people</label>
                                 </div>
                             </div>
@@ -172,42 +174,43 @@
                             <h3>Which Information do you have on scammer or the fake website?</h3>
                             <div class="list-options-container">
                                 <div>
-                                    <input type="checkbox" name="i_have_full_name" id="i_have_full_name" />
+                                    <input type="checkbox" name="i_have_full_name" id="i_have_full_name" class="info-checkbox-input"/>
                                     <label for="i_have_full_name">Full name</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="i_have_phone_number" id="i_have_phone_number" />
+                                    <input type="checkbox" name="i_have_phone_number" id="i_have_phone_number" class="info-checkbox-input"/>
                                     <label for="i_have_phone_number">Phone number</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="i_have_bank_details" id="i_have_bank_details" />
+                                    <input type="checkbox" name="i_have_bank_details" id="i_have_bank_details" class="info-checkbox-input"/>
                                     <label for="i_have_bank_details">Bank account number & bank name</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="i_have_online_link" id="i_have_online_link" />
+                                    <input type="checkbox" name="i_have_online_link" id="i_have_online_link" class="info-checkbox-input" />
                                     <label for="i_have_online_link">Website, forum, or online group link</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="i_have_other_names" id="i_have_other_names" />
+                                    <input type="checkbox" name="i_have_other_names" id="i_have_other_names" class="info-checkbox-input" />
                                     <label for="i_have_other_names">Other names or nicknames</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="i_have_profession" id="i_have_profession" />
+                                    <input type="checkbox" name="i_have_profession" id="i_have_profession" class="info-checkbox-input"/>
                                     <label for="i_have_profession">Profession</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="i_have_picture" id="i_have_picture" />
+                                    <input type="checkbox" name="i_have_picture" id="i_have_picture" class="info-checkbox-input"/>
                                     <label for="i_have_picture">Profile picture/logo</label>
                                 </div>
                                 <div>
-                                    <input type="checkbox" name="i_have_media_link_username" id="i_have_media_link_username" />
+                                    <input type="checkbox" name="i_have_media_link_username"
+                                        id="i_have_media_link_username" class="info-checkbox-input"/>
                                     <label for="i_have_media_link_username">Social media link or username</label>
                                 </div>
                             </div>
                         </div>
                     </article>
                     <div class="container">
-                        <button type="button" class="btn px-2">
+                        <button type="button" class="btn px-2 proceed-btn">
                             Proceed
                             <i class="fa-solid fa-arrow-right"></i>
                         </button>
@@ -218,10 +221,57 @@
                         <div><strong>5</strong></div>
                         <div>
                             <h3>Provide those information you have on the scammer or fake website.</h3>
-                            <div class="list-options-container">
+                            <div class="list-options-container number5-container">
                                 <div>
-                                    <label for="person">Full name of scammer or website</label>
-                                    <input type="input" name="" id="" />
+                                    <label for="scammer-fullname">Full name of scammer or website</label>
+                                    <input type="input" name="scammer-fullname" id="scammer-fullname" />
+                                </div>
+                                <div>
+                                    <label for="scammer-gender">Gender</label>
+                                    <select name="scammer-gender" id="scammer-gender">
+                                        <option value="female">Female</option>
+                                        <option value="male">Male</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="scammer-age-range">Age range</label>
+                                    <select name="scammer-age-range" id="scammer-age-range">
+                                        <option value="5-14">5-14 years</option>
+                                        <option value="15-25">15-25 years</option>
+                                        <option value="26-35">26-35 years</option>
+                                        <option value="36-45">36-45 years</option>
+                                        <option value="46-55">46-55 years</option>
+                                        <option value="56-65">56-65 years</option>
+                                        <option value="66+">66 years above</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="scammer-phone-number">Phone Number</label>
+                                    <input type="input" name="scammer-phone-number" id="scammer-phone-number" />
+                                </div>
+                                <div>
+                                    <label for="scammer-bank-name">Bank name</label>
+                                    <input type="input" name="scammer-bank-name" id="scammer-bank-name" />
+                                </div>
+                                <div>
+                                    <label for="scammer-account-number">Account number</label>
+                                    <input type="input" name="scammer-account-number" id="scammer-account-number" />
+                                </div>
+                                <div>
+                                    <label for="scammer-other-names">Other names/nickname</label>
+                                    <input type="input" name="scammer-other-names" id="scammer-other-names" />
+                                </div>
+                                <div>
+                                    <label for="scammer-profession">Profession</label>
+                                    <input type="input" name="scammer-profession" id="scammer-profession" />
+                                </div>
+                                <div>
+                                    <label for="scammer-website-forum-link">Website, forum, or online group link</label>
+                                    <input type="input" name="scammer-website-forum-link" id="scammer-website-forum-link" />
+                                </div>
+                                <div>
+                                    <label for="scammer-pic">Profile picture</label>
+                                    <input type="file" accept="image/*" name="scammer-pic" id="scammer-pic" />
                                 </div>
                             </div>
                         </div>
@@ -229,9 +279,10 @@
                     <article>
                         <div><strong>6</strong></div>
                         <div>
-                            <h3>Provide those information you have on the scammer or fake website.</h3>
+                            <h3>Describe what happened</h3>
                             <p>
-                                Please explain how the incident happened to make the public understand why they need to beware of the scammer, fake
+                                Please explain how the incident happened to make the public understand why they need to
+                                beware of the scammer, fake
                                 site, or phone number
                             </p>
                             <textarea name="" id="" placeholder="briefly explain here..."></textarea>
@@ -290,18 +341,20 @@
                     <article>
                         <div><strong>10</strong></div>
                         <div>
-                            <h3>Digital consent</h3>
+                            <h3>Digital user-agreement</h3>
                             <div class="consent-container">
                                 <input type="checkbox" name="consent" id="consent">
                                 <label for="consent">
-                                    I affirm that the information I provided is true and accurate to the best of my knowledge. I understand that providing
-                                    false information could make me subject to fine, imprisonment, or both. (Title 18, Nigeria law. Code, Section 1001.).
+                                    I affirm that the information I provided is true and accurate to the best of my
+                                    knowledge. I understand that providing
+                                    false information could make me subject to fine, imprisonment, or both. (Title 18,
+                                    Nigeria law. Code, Section 1001.).
                                 </label>
                             </div>
                         </div>
                     </article>
                 </section>
-                <div class="container">
+                <div class="container second-form-section-btn">
                     <button type="button" class="btn px-2">
                         Submit
                         <i class="fa-solid fa-arrow-right"></i>
@@ -312,6 +365,53 @@
     </main>
     <!-- END MAIN SITE SECTION -->
 
+    <!-- START - INITIAL POP UP -->
+    <section class="card initial-pop-up-container p-3">
+        <h3 class="md pb-2">
+            You are about to report a scam, kindly read the below notice
+        </h3>
+        <p>
+            We appreciate you for contribuating to protect other citizens by sharing scam story & scammer details with
+            the public.
+
+            <br />
+            <br />
+            Prior to reporting a scam through Scam Alert, please be assured that your personal information would NOT be
+            shared with
+            any third party if you wish not to disclose your identity as stated in our privacy policy.
+        </p>
+        <div class="mt-3">
+            <h3>User Agreement</h3>
+            <div class="consent-container">
+                <form action="#">
+                    <input type="checkbox" name="user-agreement" id="user-agreement">
+                </form>
+                <label for="user-agreement">
+                    I understand that I am not allow to use Scam Alert for any other motive aside lnforming the
+                    public know about a scammer,
+                    fake site, fake social media seller and scammer’s phone number.
+                </label>
+            </div>
+        </div>
+        <div class="container mt-3 flex space-between agreement-btn-container">
+            <button type="button" class="btn px-2 not-agreed">
+                Proceed
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <button type="button" class="btn px-2 go-back">
+                Go back
+            </button>
+        </div>
+    </section>
+    <!-- END - INITIAL POP UP -->
+
+    <!-- START - ERROR POP UP -->
+    <section class="popup-message">
+        <div>
+            
+        </div>
+    </section>
+    <!-- END - ERROR POP UP -->
     <footer>
         <section class="container subscribe-container">
             <img src="./images/home/empty mail box.png" alt="empty mail box">
@@ -320,7 +420,7 @@
                 <p>Stories share by the public plus tips & guide on scamming will be sent to you regularly.</p>
             </div>
             <form action="">
-                <input type="text" name="" id="" placeholder="Email address"/>
+                <input type="text" name="" id="" placeholder="Email address" />
                 <button class="btn">Subscribe</button>
             </form>
         </section>
@@ -367,15 +467,147 @@
                 </div>
             </div>
         </section>
-        <hr>
+        <hr />
         <section class="container copyrights">
-            &copy; 
-            <span class="year">2022</span> 
+            &copy;
+            <span class="year"></span>
             scamalert.com. All rights reserved.
         </section>
     </footer>
 
     <script src="./js/main.js"></script>
+    <script>
+        const userAgreement = document.getElementById("user-agreement");
+        const btnContainer = document.querySelector(".agreement-btn-container");
+        const firstBtnChild = btnContainer.querySelector("button:first-child");
+        const lastBtnChild = btnContainer.querySelector("button:last-child");
+        const reportsMainContainer = document.querySelector(".reports-main");
+        const popopContainer = document.querySelector(".initial-pop-up-container");
+        const backBtn = document.querySelector("button.go-back");
+        const proceedBtn = document.querySelector(".first-form-section .proceed-btn");
+
+        const secondFormSection = document.querySelector(".second-form-section");
+        const secondFormSectionBtn = document.querySelector(".second-form-section-btn");
+        
+        // hiding the second form section
+        secondFormSection.style.display = 'none';
+        secondFormSectionBtn.style.display = 'none';
+
+        // to activate or deactive the proceed button if the user ckecks agree or not
+        userAgreement.addEventListener("input", (e) => {
+            firstBtnChild.classList.toggle("not-agreed");
+            lastBtnChild.classList.toggle("not-agreed");
+        });
+
+        // allow the user access to fill a report once they've agreed
+        firstBtnChild.addEventListener("click", (e)=>{
+            if (userAgreement.checked) {
+                reportsMainContainer.classList.remove("new");
+                popopContainer.style.transform = 'translateX(-2000px)';
+
+                // making sure the pop up completely leaves the DOM
+                /*
+                setTimeout(() => {
+                    popopContainer.style.display = 'none';
+                }, 4000);
+                */
+
+            }else{
+                alert("Please read and agree to the terms stated");
+            }
+        });
+
+        // going back to the previous page
+        backBtn.addEventListener("click", ()=>{
+            history.back();
+        });
+
+        // move to the next (second) form section
+        let flag = [];
+        proceedBtn.addEventListener("click", ()=>{
+            // get all pre-filled form fields
+            const allFirstQuestionsInput = [...document.getElementsByName("i_am")];
+            const allSecondQuestionsInput = [...document.getElementsByName("anonymous")];
+            const allThirdQuestionsInput = [...document.getElementsByClassName("reporting-checkbox-input")];
+            const allFourthQuestionsInput = [...document.getElementsByClassName("info-checkbox-input")];
+
+            // making sure an option is selected from the first question
+            validateQuestionSection(allFirstQuestionsInput);
+            validateQuestionSection(allSecondQuestionsInput);
+            validateQuestionSection(allThirdQuestionsInput);
+            validateQuestionSection(allFourthQuestionsInput);
+
+            if(flag.length < 4){
+                // show pop and do nothing if all fields are not selected
+                displayInfoMessages(
+                    'danger',
+
+                    `
+                        <span>🤔</span>
+                        <p>You're have not answered some questions</p>
+                        <span>😒</span>
+                    `
+                );
+                return false;
+            }else{
+                // take user to top
+                scroll(0, 0);
+
+                // allow user see next page if all fields are selected
+                // updating the progress bar
+                document.querySelectorAll(".steps-container > div")[1]
+                .classList.add("active");
+
+                // showing the second form section
+                secondFormSection.style.display = 'initial';
+                secondFormSectionBtn.style.display = 'initial';
+
+                // hiding the first form section
+                document.querySelector(".first-form-section").style.display = 'none';
+                // secondFormSectionBtn.style.display = 'none';
+
+            }
+        });
+
+
+        // submitting the form
+        const submitBtn = secondFormSectionBtn.querySelector("button");
+        submitBtn.addEventListener("click", ()=>{
+           // go to success page (remove later - when backend ready)
+           window.location.href = "report_success.html";
+        });
+
+        function validateQuestionSection(section){
+            for (let item of section) {
+               if (item.checked) {
+                    flag.push(1);
+                    break;
+               }
+            }
+        }
+
+
+
+
+
+
+        // displaying info - pop up messages
+        const popupMessageContainer = document.querySelector(".popup-message");
+        const popupMessageDiv = popupMessageContainer.querySelector("div");
+
+        function displayInfoMessages(type, msg){
+            popupMessageDiv.innerHTML = msg;
+            popupMessageDiv.classList.add("show-info-message");
+            popupMessageDiv.classList.add(type);
+
+            setTimeout(() => {
+                popupMessageDiv.innerHTML = "";
+                popupMessageDiv.classList.remove("show-info-message");
+                popupMessageDiv.classList.remove(type);
+            }, 5000);
+        }
+        
+    </script>
 </body>
 
 </html>

@@ -53,6 +53,7 @@ Global Styles
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -67,6 +68,56 @@ p {
 h3 a,
 .profile-info-container a {
     color: var(--clr-black);
+}
+
+/* pop up info message */
+.popup-message{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+    pointer-events: none;
+}
+.popup-message div{
+    transform: translateY(1000px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    gap: .4em;
+    padding: .9em;
+    pointer-events: none;
+    color: #fff;
+}
+.popup-message div.show-info-message{
+    animation: messagePopup 1s ease-in forwards;
+}
+.popup-message div.show-info-message.danger{
+    background-color: var(--primary-color);
+}
+.popup-message div.show-info-message.success{
+    background-color: var(--success-color);
+}
+.popup-message div.show-info-message.warning{
+    background-color: var(--warning-color);
+}
+.popup-message div p{
+    margin-bottom: 0 !important;
+}
+@keyframes messagePopup {
+    0%{
+        transform: translateY(1000px);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 
 /*
@@ -491,6 +542,27 @@ END MAIN - SIX SECTION
 START MAIN - FIRST SECTION
 ===============
 */
+/* start - initial pop up */
+.initial-pop-up-container {
+    max-width: 50em;
+    position: absolute;
+    top: 35%;
+    left: 17%;
+    z-index: 5;
+    transition: all 3s;
+}
+button.not-agreed{
+    background-color: lightgrey;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+/* end - initial pop up */
+
+/* opacity: 1; */
+.reports-main.new{
+    filter: blur(1.5px) brightness(0.9);
+    pointer-events: none;
+}
 .reports-main>section img.shield {
     position: absolute;
 }
@@ -555,13 +627,12 @@ START MAIN - FIRST SECTION
     background-color: #fff;
 }
 
-.reports-main>section:last-child form input[type="radio"],
-.reports-main>section:last-child form input[type="checkbox"] {
+/* .initial-pop-up-container checkbox*/
+/* .reports-main>section:last-child form input[type="radio"], */
+/* .reports-main>section:last-child form input[type="checkbox"] { */
+form input[type="radio"],
+form input[type="checkbox"] {
     accent-color: var(--primary-color);
-}
-
-.report-main .shield-container {
-    position: relative;
 }
 
 .reports-main img.shield {
@@ -608,7 +679,30 @@ START MAIN - FIRST SECTION
 }
 
 /* styling for number 5 */
-
+.number5-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: .1em; */
+}
+.reports-main>section:nth-child(2) form article .list-options-container.number5-container {
+    line-height: normal;
+}
+.number5-container > div{
+    width: 50%;
+    margin-bottom: 1.5em;
+}
+.number5-container>div label{
+    display: block;
+}
+.number5-container>div input,
+.number5-container>div select {
+    width: 90%;
+    padding: 12px;
+    border: 2px solid #eee;
+    border-radius: var(--border-radius);
+    outline: none;
+    accent-color: var(--primary-color);
+}
 
 .reports-main>section:nth-child(2) form textarea {
     width: 100%;
@@ -653,12 +747,13 @@ END MAIN - FIRST SECTION
     margin-bottom: 10em;
 }
 
-.reports-success-main>section:nth-child(2){
+.reports-success-main>section:nth-child(2) {
     margin-top: -15em;
     position: relative;
     z-index: 1;
     margin-bottom: 10em;
 }
+
 .reports-success-main>section:nth-child(2)>div:first-child {
     display: flex;
     justify-content: center;
@@ -677,18 +772,22 @@ END MAIN - FIRST SECTION
 .reports-success-main .thankyou-p {
     color: rgb(144, 135, 135);
 }
-.reports-success-main .follow-head{
+
+.reports-success-main .follow-head {
     color: var(--primary-color);
 }
-.reports-success-main .social-media-container a{
+
+.reports-success-main .social-media-container a {
     font-size: 1.5em;
     display: inline-block;
     transition: var(--transition);
 }
+
 .reports-success-main .social-media-container a:hover {
     transform: translateY(-10px);
 }
-.reports-success-main .social-media-container a:nth-child(2){
+
+.reports-success-main .social-media-container a:nth-child(2) {
     padding: 0 1.5em;
 }
 
@@ -873,6 +972,13 @@ MEDIA QUERIES
         padding-top: 4rem;
     }
 
+    /* start - initial pop up */
+    .initial-pop-up-container {
+        top: 45%;
+        left: 10%;
+    }
+    /* end - initial pop up */
+
 }
 
 @media screen and (max-width: 970px) {
@@ -909,6 +1015,15 @@ MEDIA QUERIES
     .main-fourth-section .report-feed {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* REPORT PAGE */
+    /* start - initial pop up */
+    .initial-pop-up-container {
+        max-width: 40em;
+        left: 15%;
+    }
+
+    /* end - initial pop up */
 
     /*
     =============== 
@@ -1040,6 +1155,13 @@ MEDIA QUERIES
     }
 
     /* REPORT PAGE */
+    /* start - initial pop up */
+    .initial-pop-up-container {
+        max-width: 30em;
+        left: 15%;
+    }
+
+    /* end - initial pop up */
     .reports-main>section:first-child .steps-container .step.active span::after {
         margin-left: 3.5em;
         width: 4.5em;
@@ -1050,6 +1172,9 @@ MEDIA QUERIES
         top: 5%;
         right: 0;
         width: 8em;
+    }
+    .number5-container>div {
+        width: 100%;
     }
 
 
@@ -1084,8 +1209,24 @@ MEDIA QUERIES
         font-size: .8em;
     }
 
-    /* REPORT SUCCESS PAGE */
-    .reports-success-main>section:nth-child(2)>div:first-child h1{
+    /* start - initial pop up */
+    .initial-pop-up-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 22em;
+        left: 7%;
+        /* margin-left: 2em; */
+    }
+
+    .initial-pop-up-container>h3 {
+        font-size: 25px;
+    }
+
+    .initial-pop-up-container div>h3 {
+        font-size: 16px;
+    }
+
+    .reports-success-main>section:nth-child(2)>div:first-child h1 {
         font-size: 20px;
     }
 }
@@ -1134,7 +1275,6 @@ MEDIA QUERIES
    MAIN - FIRST SECTION
    ===============
    */
-
     .reports-main>section>h1 {
         text-align: left;
         padding-left: 14px;
@@ -1247,6 +1387,14 @@ MEDIA QUERIES
         font-size: 10px;
     }
 
+    /* REPORT PAGE */
+    /* making the buttons stack on top each other */
+    .agreement-btn-container{
+        flex-direction: column;
+    }
+    .agreement-btn-container > button{
+        margin-bottom: 2em;
+    }
     /*
     =============== 
     FOOTER
