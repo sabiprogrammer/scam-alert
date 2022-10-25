@@ -106,6 +106,14 @@
     </main>
     <!-- END MAIN SITE SECTION -->
 
+
+    <!-- START - POP UP INFO/ALERT MESSAGE -->
+    <section class="popup-message">
+        <div>
+    
+        </div>
+    </section>
+    <!-- END - POP UP INFO/ALERT MESSAGE -->
     <footer>
         <section class="container subscribe-container">
             <img src="./images/home/empty mail box.png" alt="empty mail box">
@@ -170,6 +178,16 @@
     </footer>
 
     <script src="./js/main.js"></script>
+    <script>
+        displayInfoMessages(
+                'success',
+
+                `
+                    <i class="bi bi-check2-circle pr-1"></i>
+                    <p>Story submitted successfully 👍</p>
+                `
+            );
+    </script>
 </body>
 
 </html>

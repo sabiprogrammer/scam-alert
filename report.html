@@ -421,13 +421,13 @@
     </section>
     <!-- END - INITIAL POP UP -->
 
-    <!-- START - ERROR POP UP -->
+    <!-- START - POP UP INFO/ALERT MESSAGE -->
     <section class="popup-message">
         <div>
 
         </div>
     </section>
-    <!-- END - ERROR POP UP -->
+    <!-- END - POP UP INFO/ALERT MESSAGE -->
     <footer>
         <section class="container subscribe-container">
             <img src="./images/home/empty mail box.png" alt="empty mail box">
@@ -601,28 +601,6 @@
                 }
             }
         }
-
-
-
-
-
-
-        // displaying info - pop up messages
-        const popupMessageContainer = document.querySelector(".popup-message");
-        const popupMessageDiv = popupMessageContainer.querySelector("div");
-
-        function displayInfoMessages (type, msg) {
-            popupMessageDiv.innerHTML = msg;
-            popupMessageDiv.classList.add("show-info-message");
-            popupMessageDiv.classList.add(type);
-
-            setTimeout(() => {
-                popupMessageDiv.innerHTML = "";
-                popupMessageDiv.classList.remove("show-info-message");
-                popupMessageDiv.classList.remove(type);
-            }, 5000);
-        }
-
     </script>
 </body>
 
