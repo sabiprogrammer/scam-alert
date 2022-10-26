@@ -70,6 +70,12 @@ h3 a,
     color: var(--clr-black);
 }
 
+.header-margin-bottom{
+    margin-top: 7em;
+}
+.black-color{
+    color: var(--clr-black);
+}
 /* pop up info message */
 .popup-message{
     width: 100%;
@@ -410,13 +416,13 @@ START MAIN - FOURTH SECTION
     justify-content: space-between;
 }
 
-.main-fourth-section article>div small {
+.moment-ago {
     color: var(--light-black);
     font-size: 12px;
     margin-top: 10px;
 }
 
-.main-fourth-section article>div small .dot {
+.moment-ago .dot {
     width: 4px;
     height: 4px;
     display: inline-block;
@@ -439,16 +445,17 @@ START MAIN - FOURTH SECTION
     text-decoration: underline;
 }
 
-.main-fourth-section .post-socials {
+.post-socials {
     margin-top: 1em;
     font-size: 12px;
 }
 
-.main-fourth-section .post-socials>span>span {
+.post-socials>span>span {
     color: var(--light-black);
 }
 
-.main-fourth-section article hr {
+/* .main-fourth-section article hr { */
+hr {
     height: 1px;
     background-color: rgb(233, 229, 229);
     border: none;
@@ -794,6 +801,86 @@ END MAIN - FIRST SECTION
 /*
 =============================================
         ****** END - REPORTS SUCCESS PAGE ******
+=============================================
+*/
+
+/*
+=============================================
+        ****** START - STORY PAGE ******
+=============================================
+*/
+.primary-page-container{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 2em;
+}
+.reporter-info-container{
+    display: flex;
+}
+.reporter-info-container > div:first-child{
+    display: flex;
+}
+.reporter-info-container > div:first-child h4{
+    margin-bottom: 0;
+    font-size: 1em;
+}
+
+.reporter-info-container > div:first-child p{
+    margin-bottom: 0;
+    font-size: .8em;
+}
+.reporter-info-container > div:last-child{
+    margin-left: auto;
+    margin-right: 5em;
+}
+.reporter-info-container img{
+    width: 2.5em;
+    height: 2.5em;
+    margin-right: 1em;
+}
+.primary-page-container .story-head{
+    font-size: var(--medium-text-size);
+    margin-top: 1em;
+}
+.evidences-container > div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+}
+.evidences-container img{
+    width: 100%;
+}
+.story-page-post-socials{
+    display: flex;
+    justify-content: space-between;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 60px;
+}
+.help-share-sm{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #eee;
+    padding: .3em;
+}
+.help-share-sm a{
+    font-size: 2em;
+    transition: var(--transition);
+}
+.help-share-sm a:hover,
+.help-share-sm a:active,
+.help-share-sm a:focus{
+    transform: translateY(-10px);
+}
+.reported-person img{
+    width: 50%;
+}
+/*
+=============================================
+        ****** END - STORY PAGE ******
 =============================================
 */
 
@@ -1177,6 +1264,15 @@ MEDIA QUERIES
         width: 100%;
     }
 
+    /* STORY PAGE */
+    .primary-page-container {
+        grid-template-columns: 100%;
+    }
+    .reporter-info-container>div:last-child {
+        /* margin-left: auto; */
+        margin-right: 0;
+    }
+
 
     /*
     =============== 
@@ -1391,6 +1487,9 @@ MEDIA QUERIES
     .agreement-btn-container > button{
         margin-bottom: 2em;
     }
+    .reporter-info-container {
+        display: block;
+    }
     /*
     =============== 
     FOOTER
@@ -1426,6 +1525,7 @@ MEDIA QUERIES
     .agreement-btn-container {
         flex-direction: column;
     }
+
 }
 
 @media screen and (max-width: 322px) {
