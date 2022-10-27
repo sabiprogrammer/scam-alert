@@ -570,7 +570,7 @@ button.not-agreed{
     filter: blur(1.5px) brightness(0.9);
     pointer-events: none;
 }
-.reports-main>section img.shield {
+img.shield {
     position: absolute;
 }
 
@@ -642,7 +642,7 @@ form input[type="checkbox"] {
     accent-color: var(--primary-color);
 }
 
-.reports-main img.shield {
+img.shield {
     position: absolute;
     top: 0;
     right: 10%;
@@ -881,6 +881,33 @@ END MAIN - FIRST SECTION
 /*
 =============================================
         ****** END - STORY PAGE ******
+=============================================
+*/
+
+/*
+=============================================
+        ****** START - CHECK IDENTITY PAGE ******
+=============================================
+*/
+.check-identity-main {
+    height: 100vh;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.check-identity-main > section:nth-child(2){
+    max-width: 55em;
+    margin: 0 auto;
+}
+.check-identity-main>section:nth-child(2) h1{
+    font-size: var(--big-text-size);
+}
+.verify-identity-form-container{
+    background-color: #fff;
+}
+
+/*
+=============================================
+        ****** END - CHECK IDENTITY PAGE ******
 =============================================
 */
 
