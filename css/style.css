@@ -934,8 +934,7 @@ END MAIN - FIRST SECTION
 =============================================
 */
 .check-identity-main {
-    /* height: 200px; */
-    /* position: relative; */
+    height: 100vh;
     background-color: var(--primary-color);
     color: #fff;
 }
@@ -999,7 +998,6 @@ input.error{
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 10px;
-    /* display: none; */
 }
 
 .safeguard-section-container{
