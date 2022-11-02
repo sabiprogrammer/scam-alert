@@ -82,16 +82,44 @@
             <section class="verify-identity-form-container mt-4" id="verify-identity-form-container">
                 <form action="">
                     <section class="form-btn p-1 pb-3">
-                        <button type="button" class="active mr-1">Bank detail</button>
-                        <button type="button" class="mr-1">Full name</button>
-                        <button type="button" class="mr-1">Website URL</button>
-                        <button type="button" class="mr-1">Company name</button>
-                        <button type="button" class="mr-1">Phone number</button>
+                        <button type="button" class="active mr-1" data-id="bank-detail-input-container">Bank detail</button>
+                        <button type="button" class="mr-1" data-id="fullname-input-container">Full name</button>
+                        <button type="button" class="mr-1" data-id="website-url-input-container">Website URL</button>
+                        <button type="button" class="mr-1" data-id="company-name-input-container">Company name</button>
+                        <button type="button" class="mr-1" data-id="phone-number-input-container">Phone number</button>
                     </section>
                     <section class="form-inputs p-1">
-                        <div class="inputs-container bank-details">
+                        <div class="inputs-container bank-details" id="bank-detail-input-container">
                             <input type="text" class="input-styles" placeholder="enter bank name"/>
                             <input type="text" class="input-styles" placeholder="enter account number"/>
+                            <button class="btn px-3">
+                                <i class="bi bi-upc-scan"></i>
+                                Verify
+                            </button>
+                        </div>
+                        <div class="inputs-container single-input-container" id="fullname-input-container">
+                            <input type="text" class="input-styles" placeholder="enter the person's fullname"/>
+                            <button class="btn px-3">
+                                <i class="bi bi-upc-scan"></i>
+                                Verify
+                            </button>
+                        </div>
+                        <div class="inputs-container single-input-container" id="website-url-input-container">
+                            <input type="text" class="input-styles" placeholder="enter the website url"/>
+                            <button class="btn px-3">
+                                <i class="bi bi-upc-scan"></i>
+                                Verify
+                            </button>
+                        </div>
+                        <div class="inputs-container single-input-container" id="company-name-input-container">
+                            <input type="text" class="input-styles" placeholder="enter the company name"/>
+                            <button class="btn px-3">
+                                <i class="bi bi-upc-scan"></i>
+                                Verify
+                            </button>
+                        </div>
+                        <div class="inputs-container single-input-container" id="phone-number-input-container">
+                            <input type="text" class="input-styles" placeholder="enter the phone number"/>
                             <button class="btn px-3">
                                 <i class="bi bi-upc-scan"></i>
                                 Verify
@@ -107,6 +135,77 @@
             Safeguard your transactions online
             by first verifying identity
         </h2>
+        <div class="show-mobile">
+            <img src="./images/home/Images/frame.png" alt=""/>
+        </div>
+        <section class="our-values-container">
+            <div>
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>Verify names & business name</h3>
+                <p>
+                    Lets shared our experience and scammer or fake site details with others to protect others from been victimized by the
+                    same scammer or fake site.
+                </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-phone"></i>
+                <h3>Verify phone number</h3>
+                <p>
+                    Scam Alert automatically share your story as you publish across several social media to alert the public about the
+                    scammer, fake site or phone number.
+                </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-link"></i>
+                <h3>Verify Website or social URL</h3>
+                <p>
+                    With the scam story shared by victims, third parties, or witness, you can run an identity check with just phone number,
+                    name, bank details.
+                </p>
+            </div>
+            <div>
+                <i class="fa-solid fa-building-columns"></i>
+                <h3>Verify bank detail</h3>
+                <p>
+                    On Scam Alert you can get tips, guides, news on trending scams and fraudulent practices to educated yourself and ehance
+                    your knowledge.
+                </p>
+            </div>
+        </section>
+    </section>
+    
+    <section class="container what-we-do">
+        <div>
+            <h2>
+                Accurate identity result to spot a scammer or build trust
+            </h2>
+            <p>
+                After checking the detail against billions of reports submitted on Scam Alert, you will be provided with a result page
+                showing the a public stat of detail you that inputted.
+                
+                <br/>
+                <br/>
+                Compare the public analysis, spot the signs and protect yourself online. Don’t be the next victim.
+            </p>
+        </div>
+        <div>
+            <img class="card" src="./images/result/screenshot1.png" alt="screenshot of scamalert"/>
+        </div>
+    </section>
+
+    <section class="container what-we-do what-we-do2">
+        <div>
+            <img class="card" src="./images/result/screenshot2.png" alt="screenshot of scamalert" />
+        </div>
+        <div>
+            <h2>
+                Read report and give your opinion or advise to victim </h2>
+            <p>
+                You can click on each report to read a report made by pblic and give your opinion or advise to victim.
+                Together we can
+                build a happy society by looking out for each other.
+            </p>
+        </div>
     </section>
     <!-- END MAIN SITE SECTION -->
 
@@ -182,5 +281,45 @@
     </footer>
 
     <script src="./js/main.js"></script>
+    <script>
+        // getting all inputs container
+        const allInputsContainer = [...document.querySelectorAll(".inputs-container")];
+
+        // getting all buttons
+        const btns = [...document.querySelectorAll(".form-btn button")];
+        
+        // hiding all inputs except the first one
+        allInputsContainer.forEach((input, index, array)=>{
+            if(index !== 0){
+                input.style.display = 'none';
+            }
+        });
+
+        // making the buttons work
+        // 1. looping through all buttons
+        btns.forEach((btn, index, buttons) =>{
+            btn.addEventListener("click", (e) => {
+                buttons.forEach(button =>{
+                    // 2. removing the active class from unclicked buttons
+                    // and adding it to the clicked button
+                    if(button !== btn){
+                        button.classList.remove("active");
+                    }else{
+                        button.classList.add("active");
+
+                        // 3. displaying the appropriate form input
+                        const currentBtnID = button.dataset.id;
+                        allInputsContainer.forEach(input =>{
+                            if(input.getAttribute('id') !== currentBtnID){
+                                input.style.display = 'none';
+                            }else{
+                                input.style.display = 'grid';
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

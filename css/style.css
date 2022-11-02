@@ -990,11 +990,56 @@ END MAIN - FIRST SECTION
 
 .inputs-container input:focus,
 .inputs-container input:active{
+    border: 1px solid var(--clr-black);
+}
+input.error{
     border: 1px solid var(--primary-color);
+}
+.single-input-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    /* display: none; */
 }
 
 .safeguard-section-container{
-    margin-top: 200px;
+    margin-top: 70px;
+}
+.safeguard-section-container h2{
+    text-align: center;
+    font-size: var(--big-text-size);
+    max-width: 20em;
+    margin: auto;
+}
+.safeguard-section-container .show-mobile{
+    display: none;
+}
+.safeguard-section-container .show-mobile img{
+    max-width: 25em;
+}
+.our-values-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    margin-top: 4em;
+}
+.our-values-container > div > i{
+    background-color: var(--clr-red-light);
+    padding: .8em;
+    border-radius: 50%;
+    color: var(--primary-color);
+    margin-bottom: .5em;
+}
+.what-we-do{
+    display: flex;
+    gap: 5em;
+    margin-top: calc(var(--section-spacing) + 2em);
+}
+.what-we-do2 {
+    margin-bottom: 15em;
+}
+.what-we-do div img{
+    width: 100%;
 }
 /*
 =============================================
@@ -1283,6 +1328,11 @@ MEDIA QUERIES
         margin: 0 .6rem;
         font-size: 12px;
     }
+
+    /* CHECK IDENTITY PAGE */
+    .our-values-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 /* mobile view */
@@ -1475,6 +1525,14 @@ MEDIA QUERIES
         grid-template-columns: 1fr;
         gap: 10px;
     }
+    .what-we-do {
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+    .what-we-do2 {
+        flex-wrap: wrap-reverse;
+        gap: 1em;
+    }
 
     /*
     =============== 
@@ -1557,6 +1615,12 @@ MEDIA QUERIES
     .verify-identity-form-container .form-btn {
         width: 22em;
     }
+    .our-values-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .single-input-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media screen and (max-width: 430px) {
@@ -1636,6 +1700,21 @@ MEDIA QUERIES
    ***** END - REPORT PAGE *****
    ===============
    */
+
+   /* CHECK IDENTITY PAGE */
+   .safeguard-section-container h2 {
+       font-size: var(--medium-text-size);
+       /* max-width: 20em; */
+   }
+   .safeguard-section-container .show-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+   }
+   .safeguard-section-container .show-mobile img {
+       max-width: 20em;
+   }
     /*
     =============== 
     FOOTER
