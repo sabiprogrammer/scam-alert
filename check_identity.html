@@ -71,7 +71,7 @@
 
     <!-- MAIN SITE SECTION -->
     <main class="check-identity-main pb-5">
-        <section class="py-5 shield-container">
+        <section class="py-5 shield-container shield-container--m">
             <img src="./images/auth/vector.png" alt="shield" class="shield">
         </section>
         <section>
@@ -79,20 +79,35 @@
             <p>
                 Scan an identity to verify if a public awareness has been raised about the identity & be protected. from been scammed.
             </p>
-            <section class="verify-identity-form-container">
+            <section class="verify-identity-form-container mt-4" id="verify-identity-form-container">
                 <form action="">
-                    <section class="form-btn">
-                        <button type="button">Bank detail</button>
-                        <button type="button">Full name</button>
-                        <button type="button">Website URL</button>
-                        <button type="button">Company name</button>
-                        <button type="button">Phone number</button>
+                    <section class="form-btn p-1 pb-3">
+                        <button type="button" class="active mr-1">Bank detail</button>
+                        <button type="button" class="mr-1">Full name</button>
+                        <button type="button" class="mr-1">Website URL</button>
+                        <button type="button" class="mr-1">Company name</button>
+                        <button type="button" class="mr-1">Phone number</button>
                     </section>
-                    <section class="form-inputs"></section>
+                    <section class="form-inputs p-1">
+                        <div class="inputs-container bank-details">
+                            <input type="text" class="input-styles" placeholder="enter bank name"/>
+                            <input type="text" class="input-styles" placeholder="enter account number"/>
+                            <button class="btn px-3">
+                                <i class="bi bi-upc-scan"></i>
+                                Verify
+                            </button>
+                        </div>
+                    </section>
                 </form>
             </section>
         </section>
     </main>
+    <section class="container safeguard-section-container">
+        <h2>
+            Safeguard your transactions online
+            by first verifying identity
+        </h2>
+    </section>
     <!-- END MAIN SITE SECTION -->
 
 

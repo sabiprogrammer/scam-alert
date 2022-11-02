@@ -37,10 +37,6 @@
     width: 100%;
 }
 
-/* .btn:hover {
-    transform: scale(0.9);
-} */
-
 .btn:hover {
     background-color: transparent;
     color: var(--primary-color);
