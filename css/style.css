@@ -56,6 +56,7 @@ Global Styles
     border-radius: var(--border-radius);
     outline: none;
 }
+
 /* headings font size reset */
 
 *,
@@ -143,9 +144,11 @@ h3 a,
     30% {
         transform: translateY(-100px);
     }
+
     50% {
         transform: translateY(10px);
     }
+
     70% {
         transform: translateY(-100px);
     }
@@ -960,13 +963,14 @@ END MAIN - FIRST SECTION
     text-align: center;
 }
 
-.verify-identity-form-container .form-btn{
+.verify-identity-form-container .form-btn {
     background-color: #fff;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     max-width: 40em;
 }
-.verify-identity-form-container .form-btn button{
+
+.verify-identity-form-container .form-btn button {
     display: inline-block;
     padding: 10px;
     cursor: pointer;
@@ -976,78 +980,251 @@ END MAIN - FIRST SECTION
     border-radius: 5px;
     transition: var(--transition);
 }
-.verify-identity-form-container .form-btn button.active{
+
+.verify-identity-form-container .form-btn button.active {
     background-color: var(--primary-color);
     color: #fff;
 }
-.verify-identity-form-container .form-inputs{
+
+.verify-identity-form-container .form-inputs {
     background-color: #fff;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
     margin-top: -5px;
 }
-.form-inputs .bank-details{
+
+.form-inputs .bank-details {
     display: grid;
     grid-template-columns: 2fr 2fr 1fr;
     gap: 10px;
 }
 
 .inputs-container input:focus,
-.inputs-container input:active{
+.inputs-container input:active {
     border: 1px solid var(--clr-black);
 }
-input.error{
+
+input.error {
     border: 1px solid var(--primary-color);
 }
-.single-input-container{
+
+.single-input-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 10px;
 }
 
-.safeguard-section-container{
+.safeguard-section-container {
     margin-top: 70px;
 }
-.safeguard-section-container h2{
+
+.safeguard-section-container h2 {
     text-align: center;
     font-size: var(--big-text-size);
     max-width: 20em;
     margin: auto;
 }
-.safeguard-section-container .show-mobile{
+
+.safeguard-section-container .show-mobile {
     display: none;
 }
-.safeguard-section-container .show-mobile img{
+
+.safeguard-section-container .show-mobile img {
     max-width: 25em;
 }
-.our-values-container{
+
+.our-values-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1em;
     margin-top: 4em;
 }
-.our-values-container > div > i{
+
+.our-values-container>div>i {
     background-color: var(--clr-red-light);
     padding: .8em;
     border-radius: 50%;
     color: var(--primary-color);
     margin-bottom: .5em;
 }
-.what-we-do{
+
+.what-we-do {
     display: flex;
     gap: 5em;
     margin-top: calc(var(--section-spacing) + 2em);
 }
+
 .what-we-do2 {
     margin-bottom: 15em;
 }
-.what-we-do div img{
+
+.what-we-do div img {
     width: 100%;
 }
+
 /*
 =============================================
         ****** END - CHECK IDENTITY PAGE ******
+=============================================
+*/
+/*
+=============================================
+        ******  START - RESULTS PAGE ******
+=============================================
+*/
+.results-main>section:first-child {
+    max-width: 50em;
+    margin: auto;
+    margin-top: 7em;
+}
+
+.results-main>section:first-child>h1 {
+    font-size: var(--big-text-size);
+    text-align: center;
+}
+
+.match-found-container {
+    display: flex;
+    gap: .1em;
+}
+
+.match-found-container p {
+    color: var(--success-color);
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.found-detail {
+    color: var(--primary-color);
+    font-weight: bolder;
+}
+
+.found-details-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.found-details-container>div>p:first-child {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.main-aside-container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 1em;
+    margin-top: var(--section-spacing);
+}
+
+.found-person-reports-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.found-person-reports-container>div>div {
+    display: flex;
+    gap: 1em;
+}
+
+.found-person-reports-container>div>div img {
+    width: 2.5em;
+}
+
+.found-person-reports-container .reporter-name {
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+.found-person-reports-container>div>h3 {
+    text-decoration: underline;
+}
+
+.scammer-img-container img {
+    border-radius: 5px;
+    width: 150px;
+}
+
+/* styling the aside */
+.results-main section aside .aside-img {
+    width: 100%;
+}
+
+.tips-container {
+    margin-top: 3em;
+    background-color: var(--clr-red-light);
+    padding: 2em;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.tips-container>div {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+.tips-container>div a {
+    text-decoration: underline;
+    color: var(--light-black);
+}
+
+.make-circle {
+    display: inline-block;
+    background-color: white;
+    color: var(--primary-color);
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+}
+
+.feedback-survery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eee;
+    max-width: 40em;
+    margin: auto;
+    padding: 3em 0;
+    border-radius: 5px;
+    margin-top: 10em;
+    margin-bottom: 23em;
+}
+
+.feedback-survery .satisfaction-response {
+    display: flex;
+    justify-content: space-evenly;
+    margin: .5em 0 3em;
+}
+
+.feedback-survery .satisfaction-response>div {
+    background-color: #fff;
+    padding: .5em;
+    border-radius: 5px;
+}
+
+.feedback-survery .satisfaction-response>div a span {
+    font-size: 12px;
+}
+
+.feedback-survery .satisfaction-response>div a strong {
+    font-size: 20px;
+}
+
+.feedback-survery .satisfaction-response>div a span:first-child {
+    background-color: #eee;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+/*
+=============================================
+        ******  END - RESULTS PAGE ******
 =============================================
 */
 
@@ -1403,6 +1580,7 @@ MEDIA QUERIES
 }
 
 @media screen and (max-width: 760px) {
+
     /*
     =============== 
     START MAIN - THIRD SECTION
@@ -1460,83 +1638,127 @@ MEDIA QUERIES
     }
 
     /* CHECK IDENTITY PAGE */
-    .shield-container--m{
+    .shield-container--m {
         padding-top: 4rem;
         padding-bottom: 4rem;
     }
-    .shield-container--m .shield{
+
+    .shield-container--m .shield {
         width: 100px;
         top: 2.5em;
     }
+
     .check-identity-main>section:nth-child(2) {
         max-width: 35em;
         text-align: center;
     }
-    
+
     .check-identity-main>section:nth-child(2)>p {
         margin: 0;
     }
 
-    .form-inputs button{
+    .form-inputs button {
         padding: 10px;
     }
 
     /* styling the scroll  bar */
-    ::-webkit-scrollbar{
+    ::-webkit-scrollbar {
         width: 5px;
         height: 7px;
     }
-    
-    ::-webkit-scrollbar-track{
+
+    ::-webkit-scrollbar-track {
         /* background: #eee; */
         box-shadow: inset 0 0 2px grey;
         border-radius: 10px;
         margin: 0 .5em;
     }
-    
-    ::-webkit-scrollbar-thumb{
+
+    ::-webkit-scrollbar-thumb {
         /* padding: .1em; */
         background: rgb(225, 73, 73);
         /* background: #FEE6EA; */
         border-radius: 10px;
     }
-    ::-webkit-scrollbar-thumb:hover{
+
+    ::-webkit-scrollbar-thumb:hover {
         background: rgb(191, 131, 131);
     }
 
-    .verify-identity-form-container .form-inputs{
+    .verify-identity-form-container .form-inputs {
         margin-top: 0;
     }
+
     .form-btn {
         overflow-x: scroll;
         white-space: nowrap;
         padding-bottom: 1em;
     }
+
     .verify-identity-form-container .form-inputs,
-    .verify-identity-form-container .form-btn{
+    .verify-identity-form-container .form-btn {
         width: 30em;
         margin: auto;
     }
-    .form-inputs{
+
+    .form-inputs {
         padding-top: 3em;
     }
+
     .verify-identity-form-container .form-inputs {
         border-bottom-right-radius: 0px;
         border-top-right-radius: 0px;
         border-bottom-left-radius: 0px;
     }
+
     .form-inputs .bank-details {
         grid-template-columns: 1fr;
         gap: 10px;
     }
+
     .what-we-do {
         flex-wrap: wrap;
         gap: 1em;
     }
+
     .what-we-do2 {
         flex-wrap: wrap-reverse;
         gap: 1em;
     }
+
+    /* RESULTS PAGE */
+    .found-details-container {
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+
+    .results-main>section:first-child {
+        max-width: 40em;
+    }
+
+    .found-details-container>div>p:first-child {
+        margin-top: 0px;
+    }
+
+    .main-aside-container {
+        grid-template-columns: 1fr;
+        gap: 1em;
+        margin-top: var(--section-spacing);
+    }
+
+    .main-aside-container>main {
+        margin-right: 0;
+    }
+
+    .main-aside-container>main article.found-person-reports-container .scammer-img-container img {
+        width: 100%;
+    }
+    .feedback-survery{
+        max-width: 30em;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
 
     /*
     =============== 
@@ -1550,6 +1772,10 @@ MEDIA QUERIES
 }
 
 @media screen and (max-width: 500px) {
+    .hide-mobile {
+        display: none;
+    }
+
     .reports-main>section:nth-child(2) form article>div:first-child {
         width: 30px;
         height: 30px;
@@ -1599,31 +1825,57 @@ MEDIA QUERIES
     .check-identity-main>section:nth-child(2)>p {
         text-align: center;
     }
-    
-    .verify-identity-form-container .form-inputs{
+
+    .verify-identity-form-container .form-inputs {
         display: block;
     }
+
     .form-inputs .inputs-container {
         width: 100%;
     }
-    .form-inputs .inputs-container > div{
+
+    .form-inputs .inputs-container>div {
         margin-right: 0;
     }
+
     .form-inputs button {
         width: 100%;
         padding: .7em 2rem;
         font-size: 16px;
         margin: 1em 0;
     }
+
     .verify-identity-form-container .form-inputs,
     .verify-identity-form-container .form-btn {
         width: 22em;
     }
+
     .our-values-container {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .single-input-container {
         grid-template-columns: 1fr;
+    }
+
+    /* RESULTS PAGE */
+    .results-main>section:first-child {
+        max-width: 25em;
+    }
+    .main-aside-container>main article.found-person-reports-container .scammer-img-container {
+        display: none;
+    }
+    .found-person-reports-container{
+        grid-template-columns: 1fr;
+    }
+    .results-main section aside{
+        margin-top: 7em;
+    }
+    .feedback-survery {
+        max-width: 20em;
+        padding-left: 2em;
+        padding-right: 2em;
+        text-align: center;
     }
 }
 
@@ -1705,20 +1957,28 @@ MEDIA QUERIES
    ===============
    */
 
-   /* CHECK IDENTITY PAGE */
-   .safeguard-section-container h2 {
-       font-size: var(--medium-text-size);
-       /* max-width: 20em; */
-   }
-   .safeguard-section-container .show-mobile {
+    /* CHECK IDENTITY PAGE */
+    .safeguard-section-container h2 {
+        font-size: var(--medium-text-size);
+        /* max-width: 20em; */
+    }
+
+    .safeguard-section-container .show-mobile {
         display: flex;
         justify-content: center;
         align-items: center;
         margin: auto;
-   }
-   .safeguard-section-container .show-mobile img {
-       max-width: 20em;
-   }
+    }
+
+    .safeguard-section-container .show-mobile img {
+        max-width: 20em;
+    }
+
+    /* RESULTS PAGE */
+    .results-main>section:first-child {
+        max-width: 22em;
+    }
+
     /*
     =============== 
     FOOTER
@@ -1808,10 +2068,15 @@ MEDIA QUERIES
     }
 
     /* CHECK IDENTITY PAGE */
-   .verify-identity-form-container .form-inputs,
-   .verify-identity-form-container .form-btn {
-       width: 20em;
-   }
+    .verify-identity-form-container .form-inputs,
+    .verify-identity-form-container .form-btn {
+        width: 20em;
+    }
+
+    /* RESULTS PAGE */
+    .results-main>section:first-child {
+        max-width: 20em;
+    }
 
     /*
     =============== 
@@ -1863,6 +2128,7 @@ MEDIA QUERIES
     .check-identity-main>section:nth-child(2)>p {
         text-align: left;
     }
+
     .verify-identity-form-container .form-inputs,
     .verify-identity-form-container .form-btn {
         width: 17em;
@@ -1935,5 +2201,10 @@ MEDIA QUERIES
     ***** END - REPORT PAGE *****
     ===============
     */
+
+    /* RESULTS PAGE */
+    .results-main>section:first-child {
+        max-width: 17em;
+    }
 
 }
