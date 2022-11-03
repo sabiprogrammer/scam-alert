@@ -12,17 +12,22 @@ navToggle.addEventListener("click", function () {
     });
 });
 
+let myTimer;
 // displaying alert/info messages
 function displayInfoMessages (type, msg) {
+    if (myTimer) {
+        clearInterval(myTimer);
+    }
+    
     // displaying info - pop up messages
     const popupMessageContainer = document.querySelector(".popup-message");
     const popupMessageDiv = popupMessageContainer.querySelector("div");
-
+    
     popupMessageDiv.innerHTML = msg;
     popupMessageDiv.classList.add("show-info-message");
     popupMessageDiv.classList.add(type);
-
-    setTimeout(() => {
+    
+    myTimer = setTimeout(() => {
         popupMessageDiv.innerHTML = "";
         popupMessageDiv.classList.remove("show-info-message");
         popupMessageDiv.classList.remove(type);
