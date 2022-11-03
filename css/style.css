@@ -140,8 +140,14 @@ h3 a,
         transform: translateY(1000px);
     }
 
+    30% {
+        transform: translateY(-100px);
+    }
     50% {
-        transform: translateY(-50px);
+        transform: translateY(10px);
+    }
+    70% {
+        transform: translateY(-100px);
     }
 
     100% {
