@@ -81,7 +81,7 @@
                 been scammed.
             </p>
             <section class="verify-identity-form-container mt-4" id="verify-identity-form-container">
-                <form action="" id="check-identity-form">
+                <form action="./results.html" id="check-identity-form">
                     <section class="form-btn p-1 pb-3">
                         <button type="button" class="active mr-1" data-id="bank-detail-input-container">Bank
                             detail</button>
@@ -392,7 +392,8 @@
                 }
                 return false;
             } else {
-                formContainer.submit();
+                // formContainer.submit();
+                window.location.replace("./results.html");
             }
         });
 
