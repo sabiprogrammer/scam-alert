@@ -749,7 +749,10 @@ img.shield {
     outline: none;
     accent-color: var(--primary-color);
 }
-
+.number5-container>div input.error,
+.number5-container>div select.error{
+    border: 1px solid var(--primary-color);
+}
 .reports-main>section:nth-child(2) form textarea {
     width: 100%;
     height: 200px;
@@ -1225,6 +1228,106 @@ input.error {
 /*
 =============================================
         ******  END - RESULTS PAGE ******
+=============================================
+*/
+/*
+=============================================
+        ******  START - CREATE ACCOUNT PAGE ******
+=============================================
+*/
+.create-account-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.create-account-container aside{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 5em 0 5em 4em;
+    position: relative;
+}
+.create-account-container aside h2{
+    font-size: calc(var(--big-text-size) - 3px);
+}
+.create-account-container aside .hr p{
+    height: 2px;
+    width: 70%;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+.create-account-container aside>img:not(img.bigger){
+    position: absolute;
+    width: 35px;
+}
+.create-account-container aside .bigger{
+    width: 100%;
+}
+.create-account-container aside > img:nth-child(2){
+    top: 1em;
+    left: 1em;
+}
+.create-account-container aside > img:nth-child(3){
+    top: 2em;
+    right: 0;
+}
+.create-account-container aside > img:nth-child(4){
+    top: 35%;
+    right: 5%;
+}
+.create-account-container aside > img:nth-child(5){
+    top: 40%;
+    left: 0;
+}
+.create-account-container aside > img#bottom{
+    bottom: 0;
+    right: 0;
+    width: 30%;
+}
+
+.create-account-main header p{
+    margin-bottom: 0;
+}
+.create-account-main section:nth-child(2){
+    max-width: 40em;
+    margin: auto;
+    margin-top: 2em;
+}
+.create-account-main section:nth-child(2) h1{
+    font-size: var(--big-text-size);
+    text-align: center;
+}
+.create-account-main section:nth-child(2) button.inactive{
+    background-color: #aaa;
+}
+.picture-upload-container{
+    display: flex;
+    gap: 1em;
+}
+.input-upload-container{
+    background-color: var(--light-black);
+    border-radius: 5px;
+    height: 90px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    cursor: pointer;
+}
+.input-upload-container p{
+    font-size: 14px;
+    padding-top: 5px;
+}
+.picture-upload-container .show-uploaded-image-container{
+    display: flex;
+    gap: 1em;
+}
+.picture-upload-container .show-uploaded-image-container img{
+    width: 150px;
+}
+/*
+=============================================
+        ******  END - CREATE ACCOUNT PAGE ******
 =============================================
 */
 
@@ -1759,6 +1862,27 @@ MEDIA QUERIES
         padding-right: 2em;
     }
 
+    /* CREATE ACCOUNT PAGE */
+    .create-account-container {
+        grid-template-columns: 1fr;
+        margin-bottom: 3em;
+    }
+    .create-account-container aside {
+        display: none;
+    }
+    .create-account-container aside>img:not(img.bigger) {
+        width: 55px;
+    }
+
+    .create-account-container aside .bigger {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        
+    }
+
 
     /*
     =============== 
@@ -1876,6 +2000,27 @@ MEDIA QUERIES
         padding-left: 2em;
         padding-right: 2em;
         text-align: center;
+    }
+
+    /* CREATE ACCOUNT PAGE */
+    .create-account-main section:nth-child(2) {
+        max-width: 25em;
+        padding: 0 1em;
+    }
+    .create-account-main section:nth-child(2) input,
+    .create-account-main section:nth-child(2) select{
+        width: 100%;
+    }
+    .create-account-main #accept-agreement-container > *{
+        display: inline;
+        margin: .5em;
+        width: auto;
+    }
+    .create-account-main > header{
+        display: block;
+        gap: 0;
+        width: 100%;
+        font-size: 14px;
     }
 }
 
@@ -2078,6 +2223,12 @@ MEDIA QUERIES
         max-width: 20em;
     }
 
+    /* CREATE ACCOUNT PAGE */
+    .create-account-main section:nth-child(2) {
+        max-width: 20em;
+        padding: 0 0;
+    }
+
     /*
     =============== 
     FOOTER
@@ -2132,6 +2283,12 @@ MEDIA QUERIES
     .verify-identity-form-container .form-inputs,
     .verify-identity-form-container .form-btn {
         width: 17em;
+    }
+
+
+    /* CREATE ACCOUNT PAGE */
+    .create-account-main section:nth-child(2) {
+        max-width: 18em;
     }
 
 }
@@ -2204,6 +2361,11 @@ MEDIA QUERIES
 
     /* RESULTS PAGE */
     .results-main>section:first-child {
+        max-width: 17em;
+    }
+
+    /* CREATE ACCOUNT PAGE */
+    .create-account-main section:nth-child(2) {
         max-width: 17em;
     }
 

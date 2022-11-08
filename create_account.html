@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | Scam Alert</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="./images/logo3.png">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap icons cdn -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"
+        integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css styles link -->
+    <link rel="stylesheet" href="./css/utilities.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <section class="create-account-container">
+        <main class="create-account-main mt-2">
+            <header class="flex space-between container">
+                <div>
+                    <a href="/">
+                        <img src="./images/logo.png" alt="scam alert image" />
+                    </a>
+                </div>
+                <div class="flex">
+                    <p>Have an account?</p>
+                    <a href="#" class="text-primary pl-1">Log in here</a>
+                </div>
+            </header>
+            <section>
+                <h1>Create an account</h1>
+                <p>
+                    For the purpose of submitting a scam report & giving your opinion on scam reports, you need to first
+                    create an account.
+                </p>
+                <article>
+                    <form action="/">
+                        <div class="list-options-container number5-container">
+                            <div>
+                                <label for="fullname">Your full name</label>
+                                <input type="text" name="fullname" id="fullname" />
+                                <br />
+                                <small style="color: red;"></small>
+                            </div>
+                            <div>
+                                <label for="gender">Gender</label>
+                                <select name="gender" id="gender">
+                                    <option value="select" selected disabled>-----select-----</option>
+                                    <option value="female">Female</option>
+                                    <option value="male">Male</option>
+                                </select>
+                                <br />
+                                <small style="color: red;"></small>
+                            </div>
+                            <div>
+                                <label for="age-range">Age range</label>
+                                <select name="age-range" id="age-range">
+                                    <option value="select" selected disabled>-----select-----</option>
+                                    <option value="5-14">5-14 years</option>
+                                    <option value="15-25">15-25 years</option>
+                                    <option value="26-35">26-35 years</option>
+                                    <option value="36-45">36-45 years</option>
+                                    <option value="46-55">46-55 years</option>
+                                    <option value="56-65">56-65 years</option>
+                                    <option value="66+">66 years above</option>
+                                </select>
+                                <br />
+                                <small style="color: red;"></small>
+                            </div>
+                            <div>
+                                <label for="phone-number">Phone Number</label>
+                                <input type="text" name="phone-number" id="phone-number" />
+                                <br />
+                                <small style="color: red;"></small>
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" />
+                                <br />
+                                <small style="color: red;"></small>
+                            </div>
+                            <div>
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" />
+                                <br />
+                                <small style="color: red;"></small>
+                            </div>
+                            <div>
+                                <label for="confirm-password">Confirm Password</label>
+                                <input type="password" name="confirm-password" id="confirm-password" />
+                                <br />
+                                <small style="color: red;"></small>
+                            </div>
+                            <div>
+                                <label for="pic">Profile picture</label>
+                                <input type="file" accept="image/*" name="pic" id="pic-upload-input" hidden />
+                                <section class="picture-upload-container">
+                                    <div class="input-upload-container">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <p>Upload</p>
+                                    </div>
+                                    <div class="show-uploaded-image-container">
+                                        <img src="./images/result/image24.png" alt="uploaded image" />
+                                    </div>
+                                    <a class="text-primary change-img-link">change image</a>
+                                </section>
+                                <br />
+                                <small style="color: red;"></small>
+                            </div>
+                        </div>
+
+                        <!-- accept agreement -->
+                        <div class="flex" id="accept-agreement-container">
+                            <input type="checkbox" name="agreement" id="agreement" />
+                            <label for="agreement" class="m-1">
+                                By clicking on “Creating Account”,
+                                you are agreeing to our
+                                <a href="#" class="text-primary">Terms of Service</a> and
+                                <a href="#" class="text-primary">Privacy Policy</a>.
+                            </label>
+                        </div>
+
+                        <button class="btn btn-block inactive" id="create_account_btn">Create Account</button>
+                    </form>
+                </article>
+            </section>
+            <section class="flex mt-5">
+                <p style="margin-bottom: 0;">Having trouble?</p>
+                <a href="#" class="ml-1 text-primary">Get Help</a>
+            </section>
+        </main>
+        <aside>
+            <div>
+                <h2>
+                    Let's work together as a community to reduce scam
+                </h2>
+                <p>
+                    Over 2000 Nigerians are scammed by individual, business, website online, let's join hands with the
+                    others who have
+                    reported a scam to prevent more victims.
+                </p>
+                <div class="hr mb-5">
+                    <p></p>
+                    <p></p>
+                </div>
+            </div>
+            <img src="images/auth/heart.png" alt="love" />
+            <img src="images/auth/rectangle.png" alt="rect" />
+            <img src="images/auth/Rectangle-3.png" alt="shield" />
+            <img src="images/auth/Rectangle-1.png" alt="star" />
+            <img id="bottom" src="./images/auth/Rectangle-2.png" alt="double star" />
+            <img class="bigger" src="./images/auth/young-man-in casual-clothes sitting-on-the floor-with phone.png"
+                alt="young man in casual clothes sitting on the floor with phone" />
+        </aside>
+    </section>
+
+    <!-- START - POP UP INFO/ALERT MESSAGE -->
+    <section class="popup-message">
+        <div>
+
+        </div>
+    </section>
+    <!-- END - POP UP INFO/ALERT MESSAGE -->
+
+    <!-- <script src="./js/main.js"></script> -->
+    <script>
+        let ableToSumit = false;
+
+        const agreementInput = document.getElementById("agreement");
+        const createAccountBtn = document.getElementById("create_account_btn");
+
+        createAccountBtn.style.pointerEvents = 'none';
+        [...document.querySelectorAll("small")]
+            .forEach(small => small.style.display = 'none');
+
+
+        agreementInput.addEventListener("input", e => {
+            if (agreementInput.checked && ableToSumit) {
+                createAccountBtn.style.pointerEvents = 'all';
+                createAccountBtn.classList.remove("inactive");
+                ableToSumit = true;
+            } else {
+                createAccountBtn.style.pointerEvents = 'none';
+                createAccountBtn.classList.add("inactive");
+                // ableToSumit = false;
+            }
+        });
+
+
+        const password = document.getElementById('password');
+        const confirmpassword = document.getElementById('confirm-password');
+        // little password validation
+        password.addEventListener("input", () => {
+            const smallEl = password.parentElement.querySelector('small')
+            if (password.value && password.value.length < 5) {
+                smallEl.style.display = 'block';
+                smallEl.style.color = 'red';
+                smallEl.textContent = 'password too short';
+                ableToSumit = false;
+            } else {
+                smallEl.style.display = 'none';
+                smallEl.style.color = null;
+                smallEl.textContent = '';
+                ableToSumit = true;
+            }
+        });
+
+        // checking that the two password fields match
+        confirmpassword.addEventListener("input", () => {
+            const smallEl = confirmpassword.parentElement.querySelector('small')
+
+            if (confirmpassword.value !== password.value) {
+                smallEl.style.display = 'block';
+                smallEl.style.color = 'red';
+                smallEl.textContent = 'password fields do not match';
+                ableToSumit = false;
+            } else {
+                smallEl.style.display = 'none';
+                smallEl.style.color = null;
+                smallEl.textContent = '';
+                ableToSumit = true;
+            }
+        });
+
+
+
+        // processing form submit
+        const formElement = document.querySelector("form");
+        formElement.addEventListener("submit", e => {
+        counter = [];
+
+            e.preventDefault();
+            if (!ableToSumit) {
+                displayInfoMessages(
+                    'danger',
+                    `
+                        <span>🤔</span>
+                        <p>Sorry, more actions are needed from you</p>
+                        <span>😒</span>
+                    `);
+                return false;
+            }
+
+            // validating all selects
+            let selectElements = [...document.querySelectorAll("select")];
+            selectElements.forEach(element => {
+                // console.log(element.options[element.selectedIndex].value);
+                if (element.selectedIndex <= 0) {
+                    displayErrors(element);
+                } else {
+                    clearErrors(element);
+                }
+            })
+
+            // validating all inputs
+            const allInputs = [...formElement.querySelectorAll("input")];
+            allInputs.forEach(input => {
+                if (!input.value.trim()) {
+                    // if the input does not have a value, get display appropriate error
+                    displayErrors(input);
+
+                } else {
+                    // clearing the previous error message if any
+                    clearErrors(input);
+                }
+            });
+
+            if (counter.length <= 0) {
+                formElement.submit();
+            }
+
+        });
+
+
+        let myTimer;
+        // displaying alert/info messages
+        function displayInfoMessages (type, msg) {
+            if (myTimer) {
+                clearInterval(myTimer);
+            }
+
+            // displaying info - pop up messages
+            const popupMessageContainer = document.querySelector(".popup-message");
+            const popupMessageDiv = popupMessageContainer.querySelector("div");
+
+            popupMessageDiv.innerHTML = msg;
+            popupMessageDiv.classList.add("show-info-message");
+            popupMessageDiv.classList.add(type);
+
+            myTimer = setTimeout(() => {
+                popupMessageDiv.innerHTML = "";
+                popupMessageDiv.classList.remove("show-info-message");
+                popupMessageDiv.classList.remove(type);
+            }, 5000);
+        }
+
+        // validate function
+        let counter = [];
+
+        function displayErrors (input) {
+            counter.push(1);
+
+            // getting the input label value
+            const inputLabelValue = input.parentElement.querySelector('label').textContent;
+
+            // getting the hidden small tag
+            const inputSmallElement = input.parentElement.querySelector('small');
+
+            // using it to display the message
+            displayInfoMessages(
+                'danger',
+                `
+                <span>🤔</span>
+                <p>${inputLabelValue} cannot be empty</p>
+                <span>😒</span>
+            `);
+
+            inputSmallElement.textContent = `${inputLabelValue} cannot be empty`;
+            inputSmallElement.style.display = 'inline';
+            input.classList.add("error");
+
+            // return false;
+        }
+
+
+        // reset (remove) error message
+        function clearErrors (input) {
+            const inputSmallElement = input.parentElement.querySelector('small');
+            // inputSmallElement.textContent = "";
+            inputSmallElement ? inputSmallElement.style.display = 'none' : '';
+            input.classList.remove("error");
+        }
+
+
+        // uploading image functionality
+        const picUploadInput = document.getElementById("pic-upload-input");
+        const profilePictureContainer = document.querySelector(".picture-upload-container");
+        const changeImgLink = profilePictureContainer.querySelector(".change-img-link");
+        const uploadedImgContainer = profilePictureContainer.querySelector(".show-uploaded-image-container");
+        const inputUploadContainer = profilePictureContainer.querySelector(".input-upload-container");
+
+        changeImgLink.style.display = 'none';
+        uploadedImgContainer.style.display = 'none';
+
+
+        // making the designed / custom button to trigger the click
+        // even of the hidden file input file
+        inputUploadContainer.addEventListener("click", () => {
+            picUploadInput.click();
+        });
+
+        picUploadInput.addEventListener("change", (e) => {
+            const file = e.currentTarget.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+                reader.addEventListener('load', (e) => {
+                    changeImgLink.style.display = null;
+                    uploadedImgContainer.style.display = null;
+                    inputUploadContainer.style.display = 'none';
+                    uploadedImgContainer.querySelector("img")
+                        .setAttribute('src', e.currentTarget.result);
+                });
+
+                reader.readAsDataURL(file);
+            }
+        });
+
+        // ability to change image
+        changeImgLink.addEventListener('click', () => {
+            inputUploadContainer.style.display = null;
+            changeImgLink.style.display = 'none';
+            uploadedImgContainer.style.display = 'none';
+            picUploadInput.click();
+        });
+    </script>
+</body>
+
+</html>
