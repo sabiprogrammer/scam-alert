@@ -31,7 +31,7 @@
                 <div class="nav-header">
                     <a href="/">
                         <img src="./images/logo.png" class="logo" alt="scam alert logo" />
-                    </a> 
+                    </a>
                     <button class="nav-toggle">
                         <i class="fas fa-bars"></i>
                     </button>
@@ -285,10 +285,18 @@
                                     <input type="input" name="scammer-website-forum-link"
                                         id="scammer-website-forum-link" />
                                 </div>
-                                <div>
-                                    <label for="scammer-pic">Profile picture</label>
-                                    <input type="file" accept="image/*" name="scammer-pic" id="scammer-pic" />
-                                </div>
+                                <section class="picture-upload-container" style="display: block;">
+                                    <label for="pic">Profile picture</label>
+                                    <input type="file" accept="image/*" name="pic" id="pic-upload-input" hidden />
+                                    <div class="input-upload-container">
+                                        <i class="fa-solid fa-plus"></i>
+                                        <p>Upload</p>
+                                    </div>
+                                    <div class="show-uploaded-image-container">
+                                        <img src="" alt="uploaded image" />
+                                    </div>
+                                    <a class="text-primary change-img-link">change image</a>
+                                </section>
                             </div>
                         </div>
                     </article>
@@ -304,16 +312,46 @@
                             <textarea name="" id="" placeholder="briefly explain here..."></textarea>
                         </div>
                     </article>
-                    <article>
+                    <article class="article7">
                         <div><strong>7</strong></div>
                         <div>
                             <h3>Upload evidence (if any)</h3>
                             <p>
                                 If you have evidence, you can include the image or screenshot too
                             </p>
-                            <div>
-                                ....
-                            </div>
+                            <section class="picture-upload-container" id="upload-container">
+                                <div id="pic-div-con">
+                                    <!-- <div class="show-uploaded-image-container show-uploaded-image-container__modifier">
+                                        <img src="./images/result/image24.png" alt="uploaded image" />
+                                        <a class="text-primary">remove image</a>
+                                    </div> -->
+                                </div>
+                                <input type="file" name="evidence1" class="evidenceInputs" id="evidence1" hidden />
+                                <div class="input-upload-container upload-container__modifier active">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <p>Upload</p>
+                                </div>
+                                <input type="file" name="evidence2" class="evidenceInputs" id="evidence2" hidden />
+                                <div class="input-upload-container upload-container__modifier">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <p>Upload</p>
+                                </div>
+                                <input type="file" name="evidence3" class="evidenceInputs" id="evidence3" hidden />
+                                <div class="input-upload-container upload-container__modifier">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <p>Upload</p>
+                                </div>
+                                <input type="file" name="evidence4" class="evidenceInputs" id="evidence4" hidden />
+                                <div class="input-upload-container upload-container__modifier">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <p>Upload</p>
+                                </div>
+                                <input type="file" name="evidence5" class="evidenceInputs" id="evidence5" hidden />
+                                <div class="input-upload-container upload-container__modifier">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <p>Upload</p>
+                                </div>
+                            </section>
                         </div>
                     </article>
                     <article>
@@ -351,7 +389,7 @@
                             <p>
                                 eg. Marykel instagram makeup seller is a scammer, beware of her.
                             </p>
-                            <textarea name="" id="" placeholder=""></textarea>
+                            <textarea name="" id="" placeholder="" required></textarea>
                         </div>
                     </article>
                     <article>
@@ -599,6 +637,157 @@
                     flag.push(1);
                     break;
                 }
+            }
+        }
+
+
+
+
+        // uploading image functionality
+        const picUploadInput = document.getElementById("pic-upload-input");
+        const profilePictureContainer = document.querySelector(".picture-upload-container");
+        const changeImgLink = profilePictureContainer.querySelector(".change-img-link");
+        const uploadedImgContainer = profilePictureContainer.querySelector(".show-uploaded-image-container");
+        const inputUploadContainer = profilePictureContainer.querySelector(".input-upload-container");
+
+        changeImgLink.style.display = 'none';
+        uploadedImgContainer.style.display = 'none';
+
+
+        // making the designed / custom button to trigger the click
+        // even of the hidden file input file
+        inputUploadContainer.addEventListener("click", () => {
+            picUploadInput.click();
+        });
+
+        picUploadInput.addEventListener("change", (e) => {
+            const file = e.currentTarget.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+                reader.addEventListener('load', (e) => {
+                    changeImgLink.style.display = null;
+                    uploadedImgContainer.style.display = null;
+                    inputUploadContainer.style.display = 'none';
+                    uploadedImgContainer.querySelector("img")
+                        .setAttribute('src', e.currentTarget.result);
+                });
+
+                reader.readAsDataURL(file);
+            }
+        });
+        // ability to change image
+        changeImgLink.addEventListener('click', () => {
+            inputUploadContainer.style.display = null;
+            changeImgLink.style.display = 'none';
+            uploadedImgContainer.style.display = 'none';
+            picUploadInput.click();
+        });
+
+
+
+
+        // upload evidence functionality
+        let allClicked = false;
+        let nextEl = true;
+
+        const clickBtnContainers = [...document.querySelectorAll(".upload-container__modifier")];
+        const firstBtnContainer = clickBtnContainers[0];
+        const secondBtnContainer = clickBtnContainers[1];
+        const thirdBtnContainer = clickBtnContainers[2];
+        const fourthBtnContainer = clickBtnContainers[3];
+        const fifthBtnContainer = clickBtnContainers[4];
+        const evidence1 = document.getElementById("evidence1");
+        const evidence2 = document.getElementById("evidence2");
+        const evidence3 = document.getElementById("evidence3");
+        const evidence4 = document.getElementById("evidence4");
+        const evidence5 = document.getElementById("evidence5");
+
+        function doClick (main, clickInp, next) {
+            clickInp.click();
+            main.classList.remove("active");
+            if(next && nextEl){
+                next.classList.add("active");
+            }else{
+                checkInputAvailability();
+            }
+        }
+
+        firstBtnContainer.addEventListener("click", () => {
+            doClick(firstBtnContainer, evidence1, secondBtnContainer);
+        });
+        secondBtnContainer.addEventListener("click", () => {
+            doClick(secondBtnContainer, evidence2, thirdBtnContainer);
+        });
+        thirdBtnContainer.addEventListener("click", () => {
+            doClick(thirdBtnContainer, evidence3,fourthBtnContainer);
+        });
+        fourthBtnContainer.addEventListener("click", () => {
+            doClick(fourthBtnContainer, evidence4, fifthBtnContainer);
+        });
+        fifthBtnContainer.addEventListener("click", () => {
+            doClick(fifthBtnContainer, evidence5, false);
+
+            // check if an image was removed (make space for it to be added again)
+            checkInputAvailability();
+        });
+
+        function checkInputAvailability () {
+            nextEl = false;
+            if (tempAdded.length > 0) {
+                tempAdded[0].nextElementSibling.classList.add("active");
+                tempAdded.splice(0, 1);
+            }
+        }
+
+        // processing the click event
+        const pixPreviewContainer = document.getElementById("pic-div-con");
+        const evidenceInputs = [...document.getElementsByClassName("evidenceInputs")];
+        evidenceInputs.forEach(input => {
+            input.addEventListener("change", (e) => {
+                const file = e.currentTarget.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.addEventListener('load', (e) => {
+                        // creating the image preview container/content
+                        const newDiv = document.createElement("div");
+                        newDiv.classList.add("show-uploaded-image-container");
+                        newDiv.classList.add("show-uploaded-image-container__modifier");
+                        const imagePreview = `
+                                    <img src="${e.currentTarget.result}" alt="uploaded image" />
+                                    <span class="text-primary remove-preview-image" data-id=${input.getAttribute("id")} onclick="removePreview(this);">remove image</span>
+                                `;
+
+                        newDiv.innerHTML = imagePreview
+
+                        // adding the preview to the document
+                        pixPreviewContainer.appendChild(newDiv);
+                    });
+
+                    reader.readAsDataURL(file);
+                }
+            });
+        });
+
+        let tempAdded = [];
+        // processing the remove image preview link click
+        function removePreview (el) {
+            // removing the preview from the DOM
+            el.parentElement.remove();
+
+
+            // removing the originally selected image from the input tag
+            // this is to make sure it does not send to the backend
+            document.getElementById(el.dataset.id).value = null;
+
+            // marking the input as available once more
+            const nowAvailable = document.getElementById(el.dataset.id);
+
+            tempAdded.push(nowAvailable);
+
+            const stillExist = document.querySelector("div.upload-container__modifier.active");
+            if(!stillExist && tempAdded.length > 0){
+                checkInputAvailability();
             }
         }
     </script>

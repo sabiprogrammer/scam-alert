@@ -764,6 +764,28 @@ img.shield {
 }
 
 /* styling for number 7 */
+#upload-container{
+    display: flex;
+}
+#pic-div-con{
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+section div.show-uploaded-image-container__modifier{
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+    margin-bottom: 1em;
+    
+}
+.upload-container__modifier{
+    display: none !important;
+}
+.upload-container__modifier.active{
+    display: flex !important;
+}
+
 
 .consent-container {
     display: flex;
