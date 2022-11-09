@@ -2044,6 +2044,11 @@ MEDIA QUERIES
         width: 100%;
         font-size: 14px;
     }
+
+    /* LOGIN PAGE */
+    .create-account-main section:nth-child(2) input#remember-me{
+        width: initial;
+    }
 }
 
 @media screen and (max-width: 430px) {
