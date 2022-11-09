@@ -1352,6 +1352,20 @@ input.error {
         ******  END - CREATE ACCOUNT PAGE ******
 =============================================
 */
+/*
+=============================================
+        ******  EMAIL SUCCESS PAGE ******
+=============================================
+*/
+.mail-section-container article{
+    width: 100%;
+}
+.mail-section-container article img{
+    width: 50px;   
+}
+.mail-section-container article img.mail{
+    width: 150px;
+}
 
 /*
 =============== 
