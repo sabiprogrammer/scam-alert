@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard | Scam Alert</title>
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap icons cdn -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"
+        integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css styles link -->
+    <!-- <link rel="stylesheet" href="./css/utilities.css" /> -->
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-center">
+                <!-- nav header -->
+                <div class="nav-header">
+                    <a href="/">
+                        <img src="./images/logo.png" class="logo" alt="scam alert logo" />
+                    </a>
+                    <button class="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <!-- links -->
+                <ul class="links ml-1">
+                    <li>
+                        <a href="index.html">home</a>
+                    </li>
+                    <li class="add-mt">
+                        <a href="./check_identity.html">check identity</a>
+                    </li>
+                    <li class="add-mt">
+                        <a href="contact.html">real stories shared</a>
+                    </li>
+                    <li class="add-mt">
+                        <a href="contact.html">education</a>
+                    </li>
+                </ul>
+                <ul class="links flex">
+                    <li class="mr-3">
+                        <a href="./create_account.html">
+                            <i class="fa-solid fa-user-pen"></i>
+                            <span>Sign in</span>
+                        </a>
+                    </li>
+                    <li class="btn make-text-white">
+                        <a href="report.html">
+                            Share your story
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN SITE SECTION -->
+    <section class="intro-header-blog-detail">
+        <header class="container text-center">
+            <p class="post-category">Security Tips</p>
+            <h1>
+                24 trending scamming website in Nigeria you should know about
+            </h1>
+            <div class="written-by">
+                written by James Williams on June 23rd, 2022
+            </div>
+        </header>
+    </section>
+
+    <main>
+        <article>
+            <img src="./images/blog/Image-21.png" class="post-detail-image" alt="blog title" />
+            <div class="container">
+                <h2>Post contents here...</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure excepturi unde in fugiat quae. Ipsum
+                    dignissimos, perferendis ea eos, quidem voluptates cumque officia sint dolores accusantium rem, quae
+                    voluptatem est.
+                </p>
+            </div>
+        </article>
+
+        <section class="more-container">
+            <div class="text-center">
+                <h4>Don't forget to share this post</h4>
+                <div class="help-share-sm">
+                    <span>Shares</span>
+                    <a href="#">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="about-editorial-staff">
+                <img src="./images/logo.png" alt="logo"/>
+                <div>
+                    <h3 class="text-primary">About the Scam Alert Editorial Staff</h3>
+                    <p>
+                        Editorial staff at Scam Alert is a team of expert content writer who have xeperience in writing useful content for
+                        public use.
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <img class="fight-scam" src="./images/blog/fightscam.png" alt="fight scam"/>
+            </div>
+
+            <div class="mt-5">
+                <h3>This post has 103 comments from readers</h3>
+                <h4 class="text-primary">Leave comment too</h4>
+                <form action="">
+                    <textarea name="" id="enter-post-comment" cols="30" rows="10" placeholder="input comment here..."></textarea>
+                    <div class="list-options-container number5-container">
+                        <div>
+                            <label for="fullname">Your full name</label>
+                            <input type="text" name="fullname" id="fullname" />
+                            <br />
+                            <small style="color: red;"></small>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" />
+                            <br />
+                            <small style="color: red;"></small>
+                        </div>
+                    </div>
+                    
+                    <!-- accept agreement -->
+                    <div class="flex" id="accept-followup-container">
+                        <input type="checkbox" name="followup" id="followup" />
+                        <label for="followup" class="m-1">
+                            Notify me of followup comments via e-mail.
+                        </label>
+                    </div>
+                    
+                    <button class="btn">Post Comment</button>
+                </form>
+            </div>
+
+            <div class="my-5">
+                <h3 class="text-primary">Comments from our readers</h3>
+                <div>
+                    <section class="mb-3">
+                        <article class="comment-article">
+                            <img src="./images/result/ProfileProfile.png" alt="person pic" />
+                            <div>
+                                <div class="name-date">
+                                    <h4>Kemi Okafor</h4>
+                                    <small>22 Jun 2022</small>
+                                </div>
+                                <p>Thank you very much, this website has really solved 90% of my predicaments.</p>
+                            </div>
+                        </article>
+                        <hr />
+                    </section>
+                    <section class="mb-3">
+                        <article class="comment-article">
+                            <img src="./images/result/ProfileProfile.png" alt="person pic" />
+                            <div>
+                                <div class="name-date">
+                                    <h4>Kemi Okafor</h4>
+                                    <small>22 Jun 2022</small>
+                                </div>
+                                <p>Thank you very much, this website has really solved 90% of my predicaments.</p>
+                            </div>
+                        </article>
+                        <hr />
+                    </section>
+                    <section class="mb-3">
+                        <article class="comment-article">
+                            <img src="./images/result/ProfileProfile.png" alt="person pic" />
+                            <div>
+                                <div class="name-date">
+                                    <h4>Kemi Okafor</h4>
+                                    <small>22 Jun 2022</small>
+                                </div>
+                                <p>Thank you very much, this website has really solved 90% of my predicaments.</p>
+                            </div>
+                        </article>
+                        <hr />
+                    </section>
+                </div>
+                <a href="#" class="view-more-comments">view more</a>
+            </div>
+        </section>
+
+
+        <section class="container py-5 related-posts-container">
+            <div class="related-posts-head">
+                <i class="fa-solid fa-lightbulb"></i>
+                <h3>
+                    Related Posts
+                </h3>
+            </div>
+            <section class="posts-container">
+                <article class="post">
+                    <img src="./images/blog/Image1.png" alt="blog title" />
+                    <h3>How the flying fish swiftly flew by the space station</h3>
+                    <p>
+                        Quis neque, eu et ipsum amet, vel et. Varius integer enim pellentesque ornare pharetra faucibs arcu. Mauris
+                        blandit
+                        egestas nibh.
+                    </p>
+                    <a href="#" class="text-primary">Read more</a>
+                </article>
+                <article class="post">
+                    <img src="./images/blog/Image1.png" alt="blog title" />
+                    <h3>How the flying fish swiftly flew by the space station</h3>
+                    <p>
+                        Quis neque, eu et ipsum amet, vel et. Varius integer enim pellentesque ornare pharetra faucibs arcu. Mauris
+                        blandit
+                        egestas nibh.
+                    </p>
+                    <a href="#" class="text-primary">Read more</a>
+                </article>
+                <article class="post">
+                    <img src="./images/blog/Image1.png" alt="blog title" />
+                    <h3>How the flying fish swiftly flew by the space station</h3>
+                    <p>
+                        Quis neque, eu et ipsum amet, vel et. Varius integer enim pellentesque ornare pharetra faucibs arcu. Mauris
+                        blandit
+                        egestas nibh.
+                    </p>
+                    <a href="#" class="text-primary">Read more</a>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <!-- END MAIN SITE SECTION -->
+
+    <footer>
+        <section class="container subscribe-container">
+            <img src="./images/home/empty mail box.png" alt="empty mail box">
+            <div>
+                <h5>Subscribe to receive stories & tips</h5>
+                <p>Stories share by the public plus tips & guide on scamming will be sent to you regularly.</p>
+            </div>
+            <form action="">
+                <input type="text" name="" id="" placeholder="Email address" />
+                <button class="btn">Subscribe</button>
+            </form>
+        </section>
+        <section class="container grid main-footer-content">
+            <div>
+                <div class="scam-logo-container">
+                    <img src="./images/logo2.png" alt="scam alert logo" />
+                    <strong>Scam Alert</strong>
+                </div>
+                <p>
+                    Scam Alert is a non-profit organisation committed to promoting public awareness and concern about
+                    crime and to propagate the concept of self-help in crime prevention.
+                </p>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Our Vision</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Get help</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Legal Notice</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Us</a></li>
+                    <li><a href="#">DPA</a></li>
+                    <li><a href="#">DMCA Policy</a></li>
+                    <li><a href="#">ERDF Support</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Follow us</h4>
+                <div class="social-containers">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="container copyrights">
+            &copy;
+            <span class="year">2022</span>
+            scamalert.com. All rights reserved.
+        </section>
+    </footer>
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>

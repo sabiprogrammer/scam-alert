@@ -21,6 +21,7 @@ Variables
     --clr-white: #fff;
     --light-color: #f4f4f4;
     --light-black: rgb(197, 191, 191);
+    --lighter-black: rgb(238, 238, 238);
     --success-color: #5cb85c;
     --error-color: #d9534f;
     --warning-color: #eed675;
@@ -749,10 +750,12 @@ img.shield {
     outline: none;
     accent-color: var(--primary-color);
 }
+
 .number5-container>div input.error,
-.number5-container>div select.error{
+.number5-container>div select.error {
     border: 1px solid var(--primary-color);
 }
+
 .reports-main>section:nth-child(2) form textarea {
     width: 100%;
     height: 200px;
@@ -764,25 +767,29 @@ img.shield {
 }
 
 /* styling for number 7 */
-#upload-container{
+#upload-container {
     display: flex;
 }
-#pic-div-con{
+
+#pic-div-con {
     display: flex;
     gap: 1em;
     flex-wrap: wrap;
 }
-section div.show-uploaded-image-container__modifier{
+
+section div.show-uploaded-image-container__modifier {
     display: flex !important;
     flex-direction: column !important;
     gap: 0 !important;
     margin-bottom: 1em;
-    
+
 }
-.upload-container__modifier{
+
+.upload-container__modifier {
     display: none !important;
 }
-.upload-container__modifier.active{
+
+.upload-container__modifier.active {
     display: flex !important;
 }
 
@@ -1257,74 +1264,89 @@ input.error {
         ******  START - CREATE ACCOUNT PAGE ******
 =============================================
 */
-.create-account-container{
+.create-account-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
-.create-account-container aside{
+
+.create-account-container aside {
     background-color: var(--primary-color);
     color: #fff;
     padding: 5em 0 5em 4em;
     position: relative;
 }
-.create-account-container aside h2{
+
+.create-account-container aside h2 {
     font-size: calc(var(--big-text-size) - 3px);
 }
-.create-account-container aside .hr p{
+
+.create-account-container aside .hr p {
     height: 2px;
     width: 70%;
     background-color: #fff;
     margin-bottom: 5px;
 }
-.create-account-container aside>img:not(img.bigger){
+
+.create-account-container aside>img:not(img.bigger) {
     position: absolute;
     width: 35px;
 }
-.create-account-container aside .bigger{
+
+.create-account-container aside .bigger {
     width: 100%;
 }
-.create-account-container aside > img:nth-child(2){
+
+.create-account-container aside>img:nth-child(2) {
     top: 1em;
     left: 1em;
 }
-.create-account-container aside > img:nth-child(3){
+
+.create-account-container aside>img:nth-child(3) {
     top: 2em;
     right: 0;
 }
-.create-account-container aside > img:nth-child(4){
+
+.create-account-container aside>img:nth-child(4) {
     top: 35%;
     right: 5%;
 }
-.create-account-container aside > img:nth-child(5){
+
+.create-account-container aside>img:nth-child(5) {
     top: 40%;
     left: 0;
 }
-.create-account-container aside > img#bottom{
+
+.create-account-container aside>img#bottom {
     bottom: 0;
     right: 0;
     width: 30%;
 }
 
-.create-account-main header p{
+.create-account-main header p {
     margin-bottom: 0;
 }
-.create-account-main section:nth-child(2){
+
+.create-account-main section:nth-child(2) {
     max-width: 40em;
     margin: auto;
     margin-top: 2em;
 }
-.create-account-main section:nth-child(2) h1{
+
+.create-account-main section:nth-child(2) h1 {
     font-size: var(--big-text-size);
     text-align: center;
 }
-.create-account-main section:nth-child(2) button.inactive{
+
+.create-account-main section:nth-child(2) button.inactive {
     background-color: #aaa;
 }
-.picture-upload-container{
+
+.picture-upload-container {
     display: flex;
     gap: 1em;
 }
-.input-upload-container{
+
+.input-upload-container {
     background-color: var(--light-black);
     border-radius: 5px;
     height: 90px;
@@ -1336,17 +1358,21 @@ input.error {
     padding-top: 1em;
     cursor: pointer;
 }
-.input-upload-container p{
+
+.input-upload-container p {
     font-size: 14px;
     padding-top: 5px;
 }
-.picture-upload-container .show-uploaded-image-container{
+
+.picture-upload-container .show-uploaded-image-container {
     display: flex;
     gap: 1em;
 }
-.picture-upload-container .show-uploaded-image-container img{
+
+.picture-upload-container .show-uploaded-image-container img {
     width: 150px;
 }
+
 /*
 =============================================
         ******  END - CREATE ACCOUNT PAGE ******
@@ -1357,15 +1383,555 @@ input.error {
         ******  EMAIL SUCCESS PAGE ******
 =============================================
 */
-.mail-section-container article{
+.mail-section-container article {
     width: 100%;
 }
-.mail-section-container article img{
-    width: 50px;   
+
+.mail-section-container article img {
+    width: 50px;
 }
-.mail-section-container article img.mail{
+
+.mail-section-container article img.mail {
     width: 150px;
 }
+
+
+
+
+
+/*
+=============================================
+        ****** USER PROFILE PAGE ******
+=============================================
+*/
+.intro-section-header {
+    background-color: var(--primary-color);
+    margin-top: 3em;
+    padding-top: 5em;
+    position: relative;
+    color: #fff;
+}
+
+.intro-section-header header div p {
+    opacity: .8;
+    padding-bottom: 2em;
+}
+
+.intro-section-header img.amour {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    opacity: .5;
+    width: 150px;
+}
+
+.yellow-info-container {
+    background-color: var(--warning-color);
+    border-radius: 5px;
+    margin: 2em 0;
+    padding: .7em;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+.yellow-info-container i {
+    color: var(--primary-color);
+    font-size: 1.5em;
+}
+
+.yellow-info-container article {
+    font-size: 14px;
+}
+
+.profile-details-edit-container {
+    display: flex;
+    gap: 10em;
+}
+
+.profile-details-edit-container section:first-child>img {
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+}
+
+.profile-details-edit-container section:first-child .person-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-details-edit-container section:first-child .person-info p {
+    padding-right: 1em;
+    position: relative;
+    font-size: 14px;
+}
+
+.profile-details-edit-container section:first-child .person-info p::before {
+    content: "";
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    background-color: #222;
+    position: absolute;
+    top: 8px;
+    margin-left: -.5em;
+}
+
+.profile-details-edit-container .nav-links-container {
+    border-bottom: 3px solid var(--lighter-black);
+    padding-bottom: .5em;
+    margin-bottom: 2em;
+}
+
+.profile-details-edit-container .nav-links-container a {
+    font-size: 14px;
+    color: var(--clr-black);
+    margin: 1em;
+    position: relative;
+}
+
+.profile-details-edit-container .nav-links-container a::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background-color: var(--lighter-black);
+    top: 10%;
+    margin-left: 1em;
+}
+
+.profile-details-edit-container .nav-links-container a.following-cases::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background-color: #fff;
+    top: 0;
+    margin-left: 0;
+}
+
+.profile-details-edit-container .nav-links-container a.active {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.profile-details-edit-container .show-uploaded-image-container img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.profile-details-edit-container .change-picture {
+    background-color: var(--light-black);
+    border-radius: 5px;
+    display: inline-block;
+    padding: .5em;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+
+
+
+
+/*
+=============================================
+        ****** SCAM REPORTED PAGE ******
+=============================================
+*/
+.scam-count-container {
+    display: flex;
+    gap: .5em;
+    margin: 1em 0;
+}
+
+.make-circle__danger {
+    background-color: var(--primary-color);
+    display: inline-block;
+    color: #fff;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+=============================================
+****** BLOG POSTS PAGE ******
+=============================================
+*/
+
+.categories-list>div {
+    background-color: var(--lighter-black);
+    padding: .5em 1em;
+}
+
+.categories-list>div.active {
+    background-color: var(--clr-red-light);
+}
+
+.categories-list>div a {
+    color: var(--clr-black);
+}
+
+.categories-list>div.active a {
+    color: var(--primary-color);
+}
+
+.search-container form label[for='search-input'] {
+    display: flex;
+    position: relative;
+}
+
+.search-container form label[for='search-input'] i {
+    position: absolute;
+    top: 40%;
+    margin-left: .7em;
+    color: var(--light-black);
+    font-size: 16px;
+}
+
+.search-container form input#search-input {
+    border: 1px solid var(--light-black);
+    border-radius: 5px;
+    width: 100%;
+    padding: 1em;
+    padding-left: 2em;
+    font-size: 16px;
+    outline: none;
+    background-color: var(--lighter-black);
+}
+
+.posts-container {
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+}
+
+.posts-container .post {
+    border: 1px solid var(--light-black);
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    padding-bottom: 1em;
+    transition: var(--transition);
+}
+
+.posts-container .post:hover,
+.posts-container .post:active,
+.posts-container .post:focus {
+    transform: translateY(-20px);
+}
+
+.posts-container .post img {
+    width: 100%;
+}
+
+.posts-container .post h3,
+.posts-container .post p,
+.posts-container .post a {
+    padding: 0 1em;
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin: 5em 0;
+}
+
+.pagination-container i {
+    padding: .3em;
+}
+
+.pagination-container a {
+    color: var(--clr-black);
+    transition: var(--transition);
+}
+
+.pagination-container a:focus,
+.pagination-container a:hover,
+.pagination-container a:active,
+.pagination-container a.active {
+    background-color: var(--clr-red-light);
+    padding: .5em 1em;
+    color: var(--primary-color);
+}
+
+.pagination-container div {
+    gap: 2em;
+}
+
+.pagination-container .second-group {
+    display: flex;
+}
+
+
+
+
+/*
+=============================================
+****** SINGLE POST DETAIL PAGE ******
+=============================================
+*/
+.intro-header-blog-detail {
+    background-color: var(--primary-color);
+    margin-top: 3em;
+    padding-top: 5em;
+    color: #fff;
+    height: 100vh;
+}
+
+.intro-header-blog-detail .post-category {
+    background-color: var(--clr-red-light);
+    color: var(--primary-color);
+    padding: .5em 1em;
+    border-radius: 30px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.intro-header-blog-detail .written-by {
+    opacity: .8;
+}
+
+.post-detail-image {
+    display: block;
+    max-width: 700px;
+    margin-top: -5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.more-container {
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 60px;
+}
+
+.about-editorial-staff {
+    margin: 5em 0;
+    background-color: var(--clr-red-light);
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 3em;
+    border-radius: 5px;
+    align-items: center;
+}
+
+img.fight-scam {
+    width: 100%;
+}
+
+textarea#enter-post-comment {
+    width: 90%;
+    padding: 12px;
+    border: 2px solid #eee;
+    border-radius: var(--border-radius);
+    outline: none;
+}
+
+.comment-article {
+    display: flex;
+    gap: 1em;
+}
+
+.comment-article img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.comment-article .name-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.view-more-comments {
+    border: 1px solid var(--light-black);
+    background-color: var(--lighter-black);
+    border-radius: 5px;
+    padding: .5em 1em;
+    color: var(--clr-black);
+}
+
+.related-posts-head {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.related-posts-head h3 {
+    margin-bottom: 0;
+}
+
+.related-posts-head i {
+    color: var(--primary-color);
+}
+
+
+
+
+/*
+=============================================
+****** FAQ PAGE ******
+=============================================
+*/
+h1.faq {
+    font-size: var(--big-text-size);
+    text-align: center;
+    margin-top: 1em;
+}
+
+.faq-message {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #cdcfd3;
+    border-radius: 5px;
+    outline: none;
+    padding: 1em;
+}
+
+.wrapper {
+    padding: 0 20px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.wrapper .parent-tab,
+.wrapper .child-tab {
+    margin-bottom: 8px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.18);
+}
+
+.wrapper .parent-tab label,
+.wrapper .child-tab label {
+    background: var(--primary-color);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.wrapper .parent-tab label:hover {
+    background: var(--primary-color);
+}
+
+.parent-tab input:checked~label,
+.child-tab input:checked~label {
+    border-radius: 3px 3px 0 0;
+    background: var(--primary-color);
+}
+
+.wrapper label span {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-shadow: 0 -1px 1px var(--primary-color);
+}
+
+.wrapper .child-tab label span {
+    font-size: 17px;
+}
+
+.parent-tab label .icon {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+    color: var(--primary-color);
+    display: block;
+    background: #fff;
+    border-radius: 50%;
+    text-shadow: 0 -1px 1px var(--primary-color);
+}
+
+.wrapper .child-tab label .icon {
+    height: 27px;
+    width: 27px;
+}
+
+.parent-tab label .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.parent-tab input:checked~label .icon i:before,
+.child-tab input:checked~label .icon i:before {
+    content: '\f068';
+}
+
+.wrapper .parent-tab .content,
+.wrapper .child-tab .sub-content {
+    max-height: 0px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 0 0 3px 3px;
+    transition: all 0.4s ease;
+}
+
+.parent-tab input:checked~.content,
+.child-tab input:checked~.sub-content {
+    max-height: 100vh;
+}
+
+.tab-3 input:checked~.content {
+    padding: 15px 20px;
+}
+
+.parent-tab .content p,
+.child-tab .sub-content p {
+    padding: 15px 20px;
+    font-size: 16px;
+}
+
+.child-tab .sub-content p {
+    font-size: 15px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+}
+
+
+
+
+/*
+=============================================
+****** ABOUT US PAGE ******
+=============================================
+*/
+.au-fighting-scam {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+    margin-top: 7em;
+}
+
+.au-fighting-scam article {
+    text-align: center;
+}
+
+.au-fighting-scam article img {
+    width: 150px;
+}
+
 
 /*
 =============== 
@@ -1548,8 +2114,38 @@ MEDIA QUERIES
         left: 10%;
     }
 
-    /* end - initial pop up */
+    /* styling the scroll  bar */
+    ::-webkit-scrollbar {
+        width: 5px;
+        height: 7px;
+    }
 
+    ::-webkit-scrollbar-track {
+        /* background: #eee; */
+        box-shadow: inset 0 0 2px grey;
+        border-radius: 10px;
+        margin: 0 .5em;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        /* padding: .1em; */
+        background: rgb(225, 73, 73);
+        /* background: #FEE6EA; */
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(191, 131, 131);
+    }
+
+    /* USER PROFILE PAGE */
+    .profile-details-edit-container .nav-links-container {
+        padding-bottom: 1em;
+        border-bottom: none;
+        overflow-x: scroll;
+        white-space: nowrap;
+        max-width: 500px;
+    }
 }
 
 @media screen and (max-width: 970px) {
@@ -1609,6 +2205,18 @@ MEDIA QUERIES
         text-align: left;
     }
 
+    /* BLOG POSTS PAGE */
+    .categories-list {
+        justify-content: flex-start;
+        padding-bottom: 1em;
+        white-space: nowrap;
+        overflow-x: scroll;
+    }
+
+    .categories-list>div {
+        margin: 0 .5em;
+    }
+
     /*
     =============== 
     FOOTER
@@ -1652,6 +2260,12 @@ MEDIA QUERIES
     /* CHECK IDENTITY PAGE */
     .our-values-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* USER PROFILE PAGE */
+    .profile-details-edit-container .profile-details {
+        position: relative;
+        right: 5%;
     }
 }
 
@@ -1715,6 +2329,11 @@ MEDIA QUERIES
     .main-second-section>div>div.info-content {
         padding: 2em 0;
         width: 90%;
+    }
+
+    /* USER PROFILE PAGE */
+    .profile-details-edit-container {
+        gap: 5em;
     }
 }
 
@@ -1800,30 +2419,6 @@ MEDIA QUERIES
         padding: 10px;
     }
 
-    /* styling the scroll  bar */
-    ::-webkit-scrollbar {
-        width: 5px;
-        height: 7px;
-    }
-
-    ::-webkit-scrollbar-track {
-        /* background: #eee; */
-        box-shadow: inset 0 0 2px grey;
-        border-radius: 10px;
-        margin: 0 .5em;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        /* padding: .1em; */
-        background: rgb(225, 73, 73);
-        /* background: #FEE6EA; */
-        border-radius: 10px;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-        background: rgb(191, 131, 131);
-    }
-
     .verify-identity-form-container .form-inputs {
         margin-top: 0;
     }
@@ -1892,7 +2487,8 @@ MEDIA QUERIES
     .main-aside-container>main article.found-person-reports-container .scammer-img-container img {
         width: 100%;
     }
-    .feedback-survery{
+
+    .feedback-survery {
         max-width: 30em;
         padding-left: 2em;
         padding-right: 2em;
@@ -1903,9 +2499,11 @@ MEDIA QUERIES
         grid-template-columns: 1fr;
         margin-bottom: 3em;
     }
+
     .create-account-container aside {
         display: none;
     }
+
     .create-account-container aside>img:not(img.bigger) {
         width: 55px;
     }
@@ -1916,9 +2514,34 @@ MEDIA QUERIES
         justify-content: center;
         align-items: center;
         margin: auto;
-        
     }
 
+    /* USER PROFILE PAGE */
+    .profile-details-edit-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-flex {
+        display: flex;
+        gap: 3em;
+    }
+
+
+    /* SINGLE POST DETAIL PAGE */
+    .intro-header-blog-detail h1 {
+        font-size: var(--bigger-text-size);
+    }
+
+    .post-detail-image {
+        max-width: 500px;
+    }
+
+
+    /* FAQ PAGE */
+    h1.faq {
+        font-size: var(--big-text-size);
+    }
 
     /*
     =============== 
@@ -1932,6 +2555,10 @@ MEDIA QUERIES
 }
 
 @media screen and (max-width: 500px) {
+    .more-container {
+        padding: 0 30px;
+    }
+
     .hide-mobile {
         display: none;
     }
@@ -2022,15 +2649,19 @@ MEDIA QUERIES
     .results-main>section:first-child {
         max-width: 25em;
     }
+
     .main-aside-container>main article.found-person-reports-container .scammer-img-container {
         display: none;
     }
-    .found-person-reports-container{
+
+    .found-person-reports-container {
         grid-template-columns: 1fr;
     }
-    .results-main section aside{
+
+    .results-main section aside {
         margin-top: 7em;
     }
+
     .feedback-survery {
         max-width: 20em;
         padding-left: 2em;
@@ -2043,16 +2674,19 @@ MEDIA QUERIES
         max-width: 25em;
         padding: 0 1em;
     }
+
     .create-account-main section:nth-child(2) input,
-    .create-account-main section:nth-child(2) select{
+    .create-account-main section:nth-child(2) select {
         width: 100%;
     }
-    .create-account-main #accept-agreement-container > *{
+
+    .create-account-main #accept-agreement-container>* {
         display: inline;
         margin: .5em;
         width: auto;
     }
-    .create-account-main > header{
+
+    .create-account-main>header {
         display: block;
         gap: 0;
         width: 100%;
@@ -2060,9 +2694,75 @@ MEDIA QUERIES
     }
 
     /* LOGIN PAGE */
-    .create-account-main section:nth-child(2) input#remember-me{
+    .create-account-main section:nth-child(2) input#remember-me {
         width: initial;
     }
+
+    /* USER PROFILE PAGE */
+    .profile-details-edit-container {
+        display: block;
+        /* gap: 10em; */
+    }
+
+    .mobile-flex {
+        display: flex;
+        gap: 1em;
+    }
+
+    .person-info {
+        padding-right: 1em;
+    }
+
+    /* SCAM REPORTED PAGE */
+    .scammer-img-container__user-dashboard {
+        display: none;
+    }
+
+    /* BLOG POSTS PAGA */
+    .pagination-container a {
+        font-size: 12px;
+    }
+
+    .pagination-container div {
+        gap: 1em;
+    }
+
+    /* SINGLE POST DETAIL PAGE */
+    .intro-header-blog-detail h1 {
+        font-size: var(--big-text-size);
+    }
+
+    .intro-header-blog-detail .written-by,
+    .intro-header-blog-detail .post-category {
+        font-size: 12px;
+    }
+
+    .post-detail-image {
+        max-width: 400px;
+    }
+
+    .about-editorial-staff {
+        grid-template-columns: 1fr;
+        gap: 1em;
+        padding: 1em;
+    }
+
+    /* ABOUT US PAGE */
+    .au-fight-crime {
+        margin: 0;
+        margin-top: 3em;
+    }
+    .au-fighting-scam article{
+        text-align: left;
+        display: flex;
+        gap: 2em;
+    }
+    .au-fighting-scam article img{
+        width: 50px;
+        height: 50px;
+    }
+
+
 }
 
 @media screen and (max-width: 430px) {
@@ -2163,6 +2863,11 @@ MEDIA QUERIES
     /* RESULTS PAGE */
     .results-main>section:first-child {
         max-width: 22em;
+    }
+
+    /* SINGLE POST DETAIL PAGE */
+    .post-detail-image {
+        max-width: 350px;
     }
 
     /*
@@ -2268,6 +2973,30 @@ MEDIA QUERIES
     .create-account-main section:nth-child(2) {
         max-width: 20em;
         padding: 0 0;
+    }
+
+    /* USER PROFILE PAGE */
+    .profile-details-edit-container .profile-details {
+        position: static;
+    }
+
+    /* BLOG POSTS PAGE */
+    .pagination-container a {
+        font-size: 12px;
+    }
+
+    .pagination-container div {
+        gap: .5em;
+    }
+
+    /* SINGLE POST DETAIL PAGE */
+    .post-detail-image {
+        max-width: 320px;
+    }
+
+    /* ABOUT US PAGE */
+    .au-fight-crime {
+        font-size: var(--big-text-size);
     }
 
     /*
@@ -2408,6 +3137,24 @@ MEDIA QUERIES
     /* CREATE ACCOUNT PAGE */
     .create-account-main section:nth-child(2) {
         max-width: 17em;
+    }
+
+    /* BLOG POSTS PAGA */
+    .pagination-container a {
+        font-size: 10px;
+    }
+
+    .pagination-container div {
+        gap: .1em;
+    }
+
+    /* SINGLE POST DETAIL PAGE */
+    .intro-header-blog-detail h1 {
+        font-size: var(--medium-text-size);
+    }
+
+    .post-detail-image {
+        max-width: 250px;
     }
 
 }

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard | Scam Alert</title>
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap icons cdn -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"
+        integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css styles link -->
+    <!-- <link rel="stylesheet" href="./css/utilities.css" /> -->
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-center">
+                <!-- nav header -->
+                <div class="nav-header">
+                    <a href="/">
+                        <img src="./images/logo.png" class="logo" alt="scam alert logo" />
+                    </a>
+                    <button class="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                <!-- links -->
+                <ul class="links ml-1">
+                    <li>
+                        <a href="index.html">home</a>
+                    </li>
+                    <li class="add-mt">
+                        <a href="./check_identity.html">check identity</a>
+                    </li>
+                    <li class="add-mt">
+                        <a href="contact.html">real stories shared</a>
+                    </li>
+                    <li class="add-mt">
+                        <a href="contact.html">education</a>
+                    </li>
+                </ul>
+                <ul class="links flex">
+                    <li class="mr-3">
+                        <a href="./create_account.html">
+                            <i class="fa-solid fa-user-pen"></i>
+                            <span>Sign in</span>
+                        </a>
+                    </li>
+                    <li class="btn make-text-white">
+                        <a href="report.html">
+                            Share your story
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN SITE SECTION -->
+    <section class="intro-section-header">
+        <header class="container flex space-between">
+            <div>
+                <h2>My account</h2>
+                <p>
+                    Manage your profile report, feedback from here
+                </p>
+            </div>
+            <div>
+                <img src="./images/auth/vector.png" alt="shield" class="amour" />
+            </div>
+        </header>
+    </section>
+
+    <main class="container">
+        <div class="yellow-info-container">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <article>
+                Over 2000 Nigerians are been scammed by individual, fake companies, website - online. Let's join hands to protect each
+                other to reduce scam in our society.
+            </article>
+        </div>
+        <section class="profile-details-edit-container">
+            <section class="mobile-flex">
+                <img src="images/result/ProfileProfile.png" alt="person picture"/>
+                <div>
+                    <h3>Kemi Akindele</h3>
+                    <div class="person-info">
+                        <p>Female</p>
+                        <p>Nigeria</p>
+                        <p>kemiakindele@gmail.com</p>
+                        <p>joined June 27th, 2022</p>
+                    </div>
+                </div>
+            </section>
+            <section class="profile-details">
+                <div class="nav-links-container">
+                    <a href="#">Profile & Notification</a>
+                    <a href="#">Scam Reported</a>
+                    <a href="#">Opinion dropped</a>
+                    <a href="#" class="following-cases active">Following cases</a>
+                </div>
+                <div class="scam-count-container">
+                    <span class="make-circle__danger">9</span>
+                    <h4>
+                        Cases you're following
+                    </h4>
+                </div>
+                <article class="found-person-reports-container mt-3">
+                    <div>
+                        <div>
+                            <a href="#" class="flex">
+                                <img src="./images/result/ProfileProfile.png" alt="Person name profile picture" />
+                                <strong class="reporter-name">Chika Omala</strong>
+                            </a>
+                            <small class="moment-ago">
+                                <span class="dot"></span>
+                                Raised Alarm
+                                <span class="raised-alarm">4 days</span>
+                                ago
+                            </small>
+                        </div>
+                
+                        <h3 class="mt-1">
+                            <a href="#">
+                                Maryke Instgram makeup product seller is a scammer, beware of her...
+                            </a>
+                        </h3>
+                
+                        <p>
+                            Nigerians lost over $205 million to scams between 1 January and 1 May, a 166 per cent increase
+                            compared to the same .....
+                        </p>
+                
+                        <div class="post-socials pb-2">
+                            <span>
+                                <i class="bi bi-chat-right-text-fill"></i>
+                                <span><span>2</span> comments</span>
+                            </span>
+                            <span>
+                                <i class="bi bi-share-fill"></i>
+                                <span><span>2k</span> shares</span>
+                            </span>
+                            <span>
+                                <i class="bi bi-bookmarks-fill"></i>
+                                <span><span>200</span> following</span>
+                            </span>
+                        </div>
+                
+                        <hr />
+                    </div>
+                    <div class="scammer-img-container scammer-img-container__user-dashboard">
+                        <img src="./images/result/reportedperson.png" alt="reported person name" />
+                    </div>
+                </article>
+                <article class="found-person-reports-container mt-3">
+                    <div>
+                        <div>
+                            <a href="#" class="flex">
+                                <img src="./images/result/ProfileProfile.png" alt="Person name profile picture" />
+                                <strong class="reporter-name">Chika Omala</strong>
+                            </a>
+                            <small class="moment-ago">
+                                <span class="dot"></span>
+                                Raised Alarm
+                                <span class="raised-alarm">4 days</span>
+                                ago
+                            </small>
+                        </div>
+                
+                        <h3 class="mt-1">
+                            <a href="#">
+                                Maryke Instgram makeup product seller is a scammer, beware of her...
+                            </a>
+                        </h3>
+                
+                        <p>
+                            Nigerians lost over $205 million to scams between 1 January and 1 May, a 166 per cent increase
+                            compared to the same .....
+                        </p>
+                
+                        <div class="post-socials pb-2">
+                            <span>
+                                <i class="bi bi-chat-right-text-fill"></i>
+                                <span><span>2</span> comments</span>
+                            </span>
+                            <span>
+                                <i class="bi bi-share-fill"></i>
+                                <span><span>2k</span> shares</span>
+                            </span>
+                            <span>
+                                <i class="bi bi-bookmarks-fill"></i>
+                                <span><span>200</span> following</span>
+                            </span>
+                        </div>
+                
+                        <hr />
+                    </div>
+                    <div class="scammer-img-container scammer-img-container__user-dashboard">
+                        <img src="./images/result/reportedperson.png" alt="reported person name" />
+                    </div>
+                </article>
+                <article class="found-person-reports-container mt-3">
+                    <div>
+                        <div>
+                            <a href="#" class="flex">
+                                <img src="./images/result/ProfileProfile.png" alt="Person name profile picture" />
+                                <strong class="reporter-name">Chika Omala</strong>
+                            </a>
+                            <small class="moment-ago">
+                                <span class="dot"></span>
+                                Raised Alarm
+                                <span class="raised-alarm">4 days</span>
+                                ago
+                            </small>
+                        </div>
+                
+                        <h3 class="mt-1">
+                            <a href="#">
+                                Maryke Instgram makeup product seller is a scammer, beware of her...
+                            </a>
+                        </h3>
+                
+                        <p>
+                            Nigerians lost over $205 million to scams between 1 January and 1 May, a 166 per cent increase
+                            compared to the same .....
+                        </p>
+                
+                        <div class="post-socials pb-2">
+                            <span>
+                                <i class="bi bi-chat-right-text-fill"></i>
+                                <span><span>2</span> comments</span>
+                            </span>
+                            <span>
+                                <i class="bi bi-share-fill"></i>
+                                <span><span>2k</span> shares</span>
+                            </span>
+                            <span>
+                                <i class="bi bi-bookmarks-fill"></i>
+                                <span><span>200</span> following</span>
+                            </span>
+                        </div>
+                
+                        <hr />
+                    </div>
+                    <div class="scammer-img-container scammer-img-container__user-dashboard">
+                        <img src="./images/result/reportedperson.png" alt="reported person name" />
+                    </div>
+                </article>
+                <article class="found-person-reports-container mt-3">
+                    <div>
+                        <div>
+                            <a href="#" class="flex">
+                                <img src="./images/result/ProfileProfile.png" alt="Person name profile picture" />
+                                <strong class="reporter-name">Chika Omala</strong>
+                            </a>
+                            <small class="moment-ago">
+                                <span class="dot"></span>
+                                Raised Alarm
+                                <span class="raised-alarm">4 days</span>
+                                ago
+                            </small>
+                        </div>
+                
+                        <h3 class="mt-1">
+                            <a href="#">
+                                Maryke Instgram makeup product seller is a scammer, beware of her...
+                            </a>
+                        </h3>
+                
+                        <p>
+                            Nigerians lost over $205 million to scams between 1 January and 1 May, a 166 per cent increase
+                            compared to the same .....
+                        </p>
+                
+                        <div class="post-socials pb-2">
+                            <span>
+                                <i class="bi bi-chat-right-text-fill"></i>
+                                <span><span>2</span> comments</span>
+                            </span>
+                            <span>
+                                <i class="bi bi-share-fill"></i>
+                                <span><span>2k</span> shares</span>
+                            </span>
+                            <span>
+                                <i class="bi bi-bookmarks-fill"></i>
+                                <span><span>200</span> following</span>
+                            </span>
+                        </div>
+                
+                        <hr />
+                    </div>
+                    <div class="scammer-img-container scammer-img-container__user-dashboard">
+                        <img src="./images/result/reportedperson.png" alt="reported person name" />
+                    </div>
+                </article>
+                <article class="found-person-reports-container mt-3">
+                    <div>
+                        <div>
+                            <a href="#" class="flex">
+                                <img src="./images/result/ProfileProfile.png" alt="Person name profile picture" />
+                                <strong class="reporter-name">Chika Omala</strong>
+                            </a>
+                            <small class="moment-ago">
+                                <span class="dot"></span>
+                                Raised Alarm
+                                <span class="raised-alarm">4 days</span>
+                                ago
+                            </small>
+                        </div>
+                
+                        <h3 class="mt-1">
+                            <a href="#">
+                                Maryke Instgram makeup product seller is a scammer, beware of her...
+                            </a>
+                        </h3>
+                
+                        <p>
+                            Nigerians lost over $205 million to scams between 1 January and 1 May, a 166 per cent increase
+                            compared to the same .....
+                        </p>
+                
+                        <div class="post-socials pb-2">
+                            <span>
+                                <i class="bi bi-chat-right-text-fill"></i>
+                                <span><span>2</span> comments</span>
+                            </span>
+                            <span>
+                                <i class="bi bi-share-fill"></i>
+                                <span><span>2k</span> shares</span>
+                            </span>
+                            <span>
+                                <i class="bi bi-bookmarks-fill"></i>
+                                <span><span>200</span> following</span>
+                            </span>
+                        </div>
+                
+                        <hr />
+                    </div>
+                    <div class="scammer-img-container scammer-img-container__user-dashboard">
+                        <img src="./images/result/reportedperson.png" alt="reported person name" />
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+    <!-- END MAIN SITE SECTION -->
+
+    <footer>
+        <section class="container subscribe-container">
+            <img src="./images/home/empty mail box.png" alt="empty mail box">
+            <div>
+                <h5>Subscribe to receive stories & tips</h5>
+                <p>Stories share by the public plus tips & guide on scamming will be sent to you regularly.</p>
+            </div>
+            <form action="">
+                <input type="text" name="" id="" placeholder="Email address" />
+                <button class="btn">Subscribe</button>
+            </form>
+        </section>
+        <section class="container grid main-footer-content">
+            <div>
+                <div class="scam-logo-container">
+                    <img src="./images/logo2.png" alt="scam alert logo" />
+                    <strong>Scam Alert</strong>
+                </div>
+                <p>
+                    Scam Alert is a non-profit organisation committed to promoting public awareness and concern about
+                    crime and to propagate the concept of self-help in crime prevention.
+                </p>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Our Vision</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Get help</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Community</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Legal Notice</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Us</a></li>
+                    <li><a href="#">DPA</a></li>
+                    <li><a href="#">DMCA Policy</a></li>
+                    <li><a href="#">ERDF Support</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Follow us</h4>
+                <div class="social-containers">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="container copyrights">
+            &copy;
+            <span class="year">2022</span>
+            scamalert.com. All rights reserved.
+        </section>
+    </footer>
+
+    <script src="./js/main.js"></script>
+   
+</body>
+
+</html>
