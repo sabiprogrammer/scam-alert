@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap icons cdn -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"
+        integrity="sha512-5PV92qsds/16vyYIJo3T/As4m2d8b6oWYfoqV+vtizRB6KhF1F9kYzWzQmsO6T3z3QG2Xdhrx7FQ+5R1LiQdUA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css styles link -->
+    <link rel="stylesheet" href="./css/utilities.css" />
+    <link rel="stylesheet" href="./css/backend_dashboard_styles.css" />
+</head>
+
+<body>
+    <section class="backend-dashboard-main-container">
+        <aside>
+            <!-- hide mobile -->
+            <section class="hide-mobile">
+                <a href="#">
+                    <img src="./images/logo.png" alt="scam alert logo" />
+                </a>
+            </section>
+            <!-- end hide mobile -->
+
+            <div class="aside-head-top">
+                <p>Author Dashboard</p>
+
+                <!-- hide desktop -->
+                <div class="close-sidebar show-mobile" title="close sidebar">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <!-- end hide desktop -->
+            </div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-command"></i>
+                        <span>Dashboard</span>
+                        <!-- <span class="badge">9+</span> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-exclamation-octagon"></i>
+                        <span>Scam stories</span>
+                        <span class="badge">9+</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="#">
+                        <i class="bi bi-chat-square-dots"></i>
+                        <span>Public opinions</span>
+                        <span class="badge">9+</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-pin-angle"></i>
+                        <span>Blog posts</span>
+                        <!-- <span class="badge">9+</span> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-chat-text"></i>
+                        <span>Blog comments</span>
+                        <!-- <span class="badge">9+</span> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-bar-chart-line"></i>
+                        <span>Rank maths</span>
+                        <!-- <span class="badge">9+</span> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-people"></i>
+                        <span>Users</span>
+                        <span class="badge">9+</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-universal-access-circle"></i>
+                        <span>Permissions</span>
+                        <!-- <span class="badge">9+</span> -->
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-activity"></i>
+                        <span>Report Insights</span>
+                        <!-- <span class="badge">9+</span> -->
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+
+        <main>
+            <div class="overlay"></div>
+            <header>
+                <!-- show mobile -->
+                <div class="show-mobile">
+                    <i class="fa-solid fa-bars" title="open sidebar"></i>
+                    <a href="/">
+                        <img src="./images/logo.png" alt="logo" />
+                    </a>
+                </div>
+                <!-- end show mobile -->
+
+                <div class="profile-container">
+                    <a href="#">
+                        <img src="./images/profile/no_picture.png" alt="user profile pic" />
+                        <span>Username</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </a>
+
+                    <!-- BUILD PROFILE OPTIONS HERE... -->
+                    <section class="profile-options">
+                        <a href="#">
+                            <i class="fa-solid fa-user"></i>
+                            <span>My account</span>
+                        </a>
+                        <!-- <a href="#">
+                            <i class="fa-solid fa-bars"></i>
+                            <span>Profile</span>
+                        </a> -->
+                        <a href="#">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            <span>log out</span>
+                        </a>
+                    </section>
+                </div>
+            </header>
+            <main class="main-details-container">
+                <h1 class="session-title">Dashboard</h1>
+
+                <!-- dashboard cards -->
+                <section>
+                    <section class="cards-container">
+                        <div class="card">
+                            <i class="bi bi-exclamation-octagon"></i>
+                            <div>
+                                <p>New scam stories</p>
+                                <strong>236</strong>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <i class="bi bi-chat-square-dots"></i>
+                            <div>
+                                <p>New public opinions</p>
+                                <strong>360</strong>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <i class="bi bi-people"></i>
+                            <div>
+                                <p>Users Joined</p>
+                                <strong>28</strong>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <i class="bi bi-chat-text"></i>
+                            <div>
+                                <p>Blog comments</p>
+                                <strong>11</strong>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <!-- end dashboard cards -->
+
+                <section class="articles-container">
+                    <div class="flex space-between mb-1 mobile-sm-text">
+                        <p>Top 10 Most viewed scam stories this month</p>
+                        <a href="#" class="text-primary">View all scam stories</a>
+                    </div>
+
+                    <hr class="hr" />
+
+                    <article class="flex space-between mt-3">
+                        <div>
+                            <span>1.</span>
+                            <a href="#">Nigerians are now losing more money to XYZ investment platform</a>
+                        </div>
+                        <strong>2349</strong>
+                    </article>
+                    <article class="flex space-between mt-3">
+                        <div>
+                            <span>2.</span>
+                            <a href="#">Nigerians are now losing more money to XYZ investment platform</a>
+                        </div>
+                        <strong>2348</strong>
+                    </article>
+                    <article class="flex space-between mt-3">
+                        <div>
+                            <span>3.</span>
+                            <a href="#">Nigerians are now losing more money to XYZ investment platform</a>
+                        </div>
+                        <strong>2347</strong>
+                    </article>
+                    <article class="flex space-between mt-3">
+                        <div>
+                            <span>4.</span>
+                            <a href="#">Nigerians are now losing more money to XYZ investment platform</a>
+                        </div>
+                        <strong>2346</strong>
+                    </article>
+                    <article class="flex space-between mt-3">
+                        <div>
+                            <span>5.</span>
+                            <a href="#">Nigerians are now losing more money to XYZ investment platform</a>
+                        </div>
+                        <strong>2345</strong>
+                    </article>
+                    <article class="flex space-between mt-3">
+                        <div>
+                            <span>6.</span>
+                            <a href="#">Nigerians are now losing more money to XYZ investment platform</a>
+                        </div>
+                        <strong>2344</strong>
+                    </article>
+                    <article class="flex space-between mt-3">
+                        <div>
+                            <span>7.</span>
+                            <a href="#">Nigerians are now losing more money to XYZ investment platform</a>
+                        </div>
+                        <strong>2343</strong>
+                    </article>
+                    <article class="flex space-between mt-3">
+                        <div>
+                            <span>8.</span>
+                            <a href="#">Nigerians are now losing more money to XYZ investment platform</a>
+                        </div>
+                        <strong>232</strong>
+                    </article>
+                    <article class="flex space-between mt-3">
+                        <div>
+                            <span>9.</span>
+                            <a href="#">Nigerians are now losing more money to XYZ investment platform</a>
+                        </div>
+                        <strong>23</strong>
+                    </article>
+                    <article class="flex space-between mt-3">
+                        <div>
+                            <span>10.</span>
+                            <a href="#">Nigerians are now losing more money to XYZ investment platform</a>
+                        </div>
+                        <strong>4</strong>
+                    </article>
+                </section>
+            </main>
+        </main>
+    </section>
+
+
+    <script>
+        const barsIcon = document.querySelector(".fa-bars");
+        const closeSidebarIcon = document.querySelector(".close-sidebar");
+        const overlay = document.querySelector(".overlay");
+        const dashboardMainContainer = document.querySelector(".backend-dashboard-main-container");
+        
+        barsIcon.addEventListener("click", () => {
+            dashboardMainContainer.classList.add("show-sidebar");
+        });
+        
+        closeSidebarIcon.addEventListener("click", ()=>{
+            dashboardMainContainer.classList.remove("show-sidebar");
+        });
+        overlay.addEventListener("click", ()=>{
+            dashboardMainContainer.classList.remove("show-sidebar");
+        });
+        
+        
+        // profile details icon display
+        const profileContainer = document.querySelector(".profile-container");
+        const profileOptionsContainer = document.querySelector(".profile-options");
+
+        // profileOptionsContainer.style.display = "none";
+        
+        // profileContainer.addEventListener("click", ()=>{
+        //     profileOptionsContainer.style.display = null;
+            
+        // });
+        // profileContainer.addEventListener("mouseover", ()=>{
+        //     profileOptionsContainer.style.display = null;
+            
+        // });
+        // profileContainer.addEventListener("mouseout", ()=>{
+        //     profileOptionsContainer.style.display = null;
+            
+        // });
+        </script>
+</body>
+
+</html>

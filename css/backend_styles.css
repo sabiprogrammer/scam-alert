@@ -1,0 +1,170 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import "./utilities.css";
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+    /* dark shades of primary color*/
+    --primary-color: #F2022A;
+    --clr-red-dark: hsl(360, 67%, 44%);
+
+    /* --clr-red-light: hsl(360, 71%, 66%); */
+    --clr-red-light: #FEE6EA;
+    --clr-black: #222;
+    --clr-white: #fff;
+    --light-color: #f4f4f4;
+    --light-black: rgb(197, 191, 191);
+    --lighter-black: rgb(238, 238, 238);
+    --success-color: #5cb85c;
+    --error-color: #d9534f;
+    --warning-color: #eed675;
+    --text-size: 1em;
+    --medium-text-size: 1.5em;
+    --big-text-size: 2em;
+    --bigger-text-size: 2.5em;
+
+    --section-spacing: 3em;
+    --border-radius: 5px;
+
+    /* font family */
+    --ff-primary: "Roboto", sans-serif;
+    --ff-secondary: "Open Sans", sans-serif;
+
+    --transition: all 0.3s linear;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/*
+=============== 
+Global Styles
+===============
+*/
+
+/* button styles */
+
+
+/* input styles */
+.input-styles {
+    padding: 12px;
+    border: 2px solid rgb(238, 238, 238);
+    border-radius: var(--border-radius);
+    outline: none;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+input[type='checkbox'] {
+    accent-color: var(--primary-color);
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--ff-secondary);
+    line-height: 1.5;
+    height: 100%;
+    background-color: #F9FAFB;
+}
+
+p {
+    font-family: var(--ff-primary);
+}
+
+.backend-main-container {
+    margin: 1em 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backend-main-container>section {
+    background-color: #fff;
+    max-width: 400px;
+    padding: 1.5em;
+}
+
+.backend-main-container h1 {
+    font-size: var(--big-text-size);
+}
+
+.backend-main-container h1+p {
+    opacity: .5;
+    font-size: var(--text-size);
+}
+
+
+/*
+===============
+BACKEND EMAIL SUCCESS PAGE
+===============
+*/
+.img-container__parent {
+    margin: 3em;
+    position: relative;
+}
+
+.backend-main-container .email-success-img-container img:not(img.mail) {
+    width: 30px;
+    position: absolute;
+    top: 20px;
+}
+
+.backend-main-container .email-success-img-container img.rob {
+    left: 0;
+}
+
+.backend-main-container .email-success-img-container img.shield {
+    right: 0;
+}
+
+.backend-main-container .email-success-img-container img.mail {
+    width: 100px;
+}
+
+.backend-main-container .img-container__parent>h2 {
+    margin-top: 2em;
+    font-size: var(--medium-text-size);
+}
+
+.backend-main-container .img-container__parent>h2+p {
+    font-size: .7em;
+}
+
+/*
+===============
+MEDIA QUERY
+===============
+*/
+@media screen and (max-width: 430px) {
+    :root {
+        --text-size: .7em;
+        --medium-text-size: 1em;
+        --big-text-size: 1.5em;
+        --bigger-text-size: 2em;
+    }
+
+    .backend-main-container {
+        margin: 1em;
+    }
+
+    /* BACKEND EMAIL SUCCESS PAGE */
+    .img-container__parent {
+        margin: 1em;
+    }
+}
